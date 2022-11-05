@@ -87,4 +87,19 @@ packer.startup(function(use)
           require('Comment').setup()
       end
   }
+  use "wellle/context.vim"
+  use 'lewis6991/impatient.nvim'
+  use 'sunjon/shade.nvim'
+  use 'metakirby5/codi.vim'
+  use 'kdheepak/lazygit.nvim' 
+  use {
+    'VonHeikemen/searchbox.nvim',
+    requires = {
+      {'MunifTanjim/nui.nvim'}
+    }
+  }
+  use {
+    'declancm/cinnamon.nvim',
+    config = function() require('cinnamon').setup() end
+  }
 end)
