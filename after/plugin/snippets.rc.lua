@@ -68,6 +68,30 @@ ls.add_snippets(nil, {
             insert(0),
         }),
     },
+    vue = {
+      snip({
+       trig = "v3",
+       namr = "vue3 template",
+       dscr = "create vue3 template",
+      }, {
+        text '<script setup lang="ts">',
+        insert(0),
+        text { "", "" },
+        text '</script>',
+        text { "", "" },
+        text { "", "" },
+        text '<template>',
+        insert(0),
+        text { "", "" },
+        text '</template>',
+        text { "", "" },
+        text { "", "" },
+        text '<style scoped>',
+        insert(0),
+        text { "", "" },
+        text '</style>',
+      }),
+    },
     sh = {
         snip("shebang", {
             text { "#!/bin/sh", "" },
