@@ -87,6 +87,7 @@ packer.startup(function(use)
           require('Comment').setup()
       end
   }
+  use 'mattn/emmet-vim'
   use "wellle/context.vim"
   use 'lewis6991/impatient.nvim'
   use 'sunjon/shade.nvim'
