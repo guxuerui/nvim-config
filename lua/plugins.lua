@@ -87,7 +87,15 @@ packer.startup(function(use)
           require('Comment').setup()
       end
   }
-  use 'mattn/emmet-vim'
+  use {
+    'mattn/emmet-vim',
+    setup = function ()
+      vim.g.user_emmet_leader_key = '<c-m>'
+      vim.g.user_emmet_settings = {
+        indent_blockelement = 1,
+      }
+    end
+  }
   use "wellle/context.vim"
   use 'lewis6991/impatient.nvim'
   use 'sunjon/shade.nvim'
