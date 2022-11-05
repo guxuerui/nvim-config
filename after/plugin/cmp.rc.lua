@@ -26,31 +26,27 @@ cmp.setup({
     ["<Tab>"] = cmp.mapping(function(fallback)
       local luasnip = require "luasnip"
       if cmp.visible() then
-          cmp.select_next_item()
+          cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
       elseif luasnip.expandable() then
           luasnip.expand()
       elseif luasnip.expand_or_jumpable() then
           luasnip.expand_or_jump()
-      elseif check_backspace() then
-          fallback()
       else
           fallback()
       end
-     end, { "i", "s" }),
+     end),
     ["<S-Tab>"] = cmp.mapping(function(fallback)
       local luasnip = require "luasnip"
       if cmp.visible() then
-          cmp.select_next_item()
+          cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
       elseif luasnip.expandable() then
           luasnip.expand()
       elseif luasnip.expand_or_jumpable() then
           luasnip.expand_or_jump()
-      elseif check_backspace() then
-          fallback()
       else
           fallback()
       end
-    end, { "i", "s" }),
+    end),
   }),
   sources = cmp.config.sources({
     { name = "luasnip", priority = 1 },
