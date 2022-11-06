@@ -24,7 +24,6 @@ packer.startup(function(use)
   use "junegunn/fzf.vim"
   use 'neovim/nvim-lspconfig'
   use 'onsails/lspkind-nvim'
-  use 'L3MON4D3/LuaSnip'
   use {
     "L3MON4D3/LuaSnip",
     after = "nvim-cmp",
