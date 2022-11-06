@@ -94,6 +94,10 @@ packer.startup(function(use)
           require('Comment').setup()
       end
   }
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
   use 'mattn/emmet-vim'
   use "wellle/context.vim"
   use 'lewis6991/impatient.nvim'

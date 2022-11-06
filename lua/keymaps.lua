@@ -78,6 +78,11 @@ mapcmd("<LEADER>sl", ":RestoreSession")
 mapcmd("<LEADER>sc", ":ClearSession")
 mapcmd("<LEADER>A", ":Alpha")
 
+-- markdown-preview
+mapcmd("<LEADER>mp", ":MarkdownPreview")
+mapcmd("<LEADER>ms", ":MarkdownPreviewStop")
+mapcmd("<LEADER>mt", ":MarkdownPreviewToggle")
+
 
 -- GoTo Tabs by number
 keymap("", "<LEADER>1", "1gt", opts)
