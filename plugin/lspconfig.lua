@@ -109,3 +109,8 @@ require("lspconfig").volar.setup({
 		},
 	},
 })
+
+nvim_lsp.tailwindcss.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
