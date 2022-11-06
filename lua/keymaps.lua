@@ -113,9 +113,8 @@ mapcmd("<M-down>", "resize +5<cr>")
 mapcmd("<M-up>", "resize -5<cr>")
 mapcmd("<M-right>", "vertical resize +5<cr>")
 
-mapcmd("tn", "tabe")
-mapcmd("th", "-tabnext")
-mapcmd("tl", "+tabnext")
+mapcmd("th", ":TablineBufferPrevious")
+mapcmd("tl", ":TablineBufferNext")
 
 mapkey("n", ";fe", "<cmd>Telescope file_browser<cr>")
 mapkey("n", ";ff", "<cmd>Telescope find_files<CR>", opts)
