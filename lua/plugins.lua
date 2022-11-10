@@ -10,6 +10,7 @@ packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   -- Your plugins go here
   use 'Shatur/neovim-ayu'
+  use 'Yazeed1s/oh-lucy.nvim'
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
