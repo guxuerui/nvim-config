@@ -5,7 +5,7 @@ if not null_ls_status_ok then
 end
 
 require("noice").setup({
-lsp = {
+  lsp = {
     message = {
       enabled = true
     },
