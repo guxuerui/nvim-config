@@ -10,7 +10,7 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local format = function(payload)
 	vim.lsp.buf.format({
-		async = true,
+		async = false,
 		--[[ filter = function(clients) ]]
 		--[[ 	return client.name == "null-ls" ]]
 		--[[ end, ]]
