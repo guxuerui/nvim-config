@@ -83,7 +83,6 @@ mapcmd("<LEADER>mp", ":MarkdownPreview")
 mapcmd("<LEADER>ms", ":MarkdownPreviewStop")
 mapcmd("<LEADER>mt", ":MarkdownPreviewToggle")
 
-
 -- GoTo Tabs by number
 keymap("", "<LEADER>1", "1gt", opts)
 keymap("", "<LEADER>2", "2gt", opts)
@@ -120,8 +119,7 @@ mapkey("n", ";fe", "<cmd>Telescope file_browser<cr>")
 mapkey("n", ";ff", "<cmd>Telescope find_files<CR>", opts)
 mapkey("n", ";fg", "<cmd>Telescope live_grep<cr>", opts)
 mapkey("n", ";fb", "<cmd>Telescope buffers<cr>", opts)
-mapkey("n", ";fh", "<cmd>Telescop help_tags<cr>", opts)
-mapkey("n", ";fn", "<cmd>Telescop notify<cr>", opts)
+mapkey("n", ";fh", "<cmd>Telescope help_tags<cr>", opts)
 mapkey("n", ";gc", "<cmd>Telescope git_commits<cr>", opts)
 mapkey("n", ";gbc", "<cmd>Telescope git_bcommits<cr>", opts)
 mapkey("n", ";gbr", "<cmd>Telescope git_branches<cr>", opts)
