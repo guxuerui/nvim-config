@@ -90,6 +90,7 @@ packer.startup(function(use)
   use 'sunjon/shade.nvim'
   use 'metakirby5/codi.vim'
   use 'kdheepak/lazygit.nvim' 
+  use 'yamatsum/nvim-cursorline'
   use {
     'VonHeikemen/searchbox.nvim',
     requires = {
