@@ -4,8 +4,8 @@ if (not status) then return end
 cursorline.setup ({
   cursorline = {
     enable = true,
-    timeout = 500,
-    number = false,
+    timeout = 1000,
+    number = true,
   },
   cursorword = {
     enable = true,
