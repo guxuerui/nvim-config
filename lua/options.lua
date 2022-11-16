@@ -56,10 +56,6 @@ for k, v in pairs(options) do
   vim.opt[k] = v
 end
 
--- if vim.fn.has("termguicolors") == 1 then
---  vim.opt.termguicolors = true
--- end
-
 vim.cmd('autocmd!')
 vim.cmd('syntax on')
 vim.cmd "set whichwrap+=<,>,[,],h,l"
