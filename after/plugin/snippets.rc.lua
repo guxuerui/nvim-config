@@ -246,7 +246,7 @@ ls.add_snippets(nil, {
       insert(0),
     }),
     snip({
-      trig = "codewrap",
+      trig = "codew",
       namr = "markdown_code_wrap",
       dscr = "Create markdown code block from existing text",
     }, {
