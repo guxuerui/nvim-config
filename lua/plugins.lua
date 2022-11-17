@@ -97,8 +97,5 @@ packer.startup(function(use)
       {'MunifTanjim/nui.nvim'}
     }
   }
-  use {
-    'declancm/cinnamon.nvim',
-    config = function() require('cinnamon').setup() end
-  }
+  use 'declancm/cinnamon.nvim'
 end)
