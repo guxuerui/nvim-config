@@ -72,7 +72,11 @@ mapkey("n", "<LEADER>sv", "<C-w>t<C-w>H", opts)
 mapkey("n", "<LEADER>sh", "<C-w>t<C-w>K", opts)
 mapkey("n", "s", "<Plug>(easymotion-bd-f)", opts)
 
-keymap("", "<LEADER>cd", ":cd %:p:h<CR>:pwd<CR>", opts)
+-- refactor C-a and C-x
+mapkey("n", "+", "<C-a>", opts)
+mapkey("n", "-", "<C-x>", opts)
+
+-- autosessionn vim
 mapcmd("<LEADER>ss", ":SaveSession")
 mapcmd("<LEADER>sl", ":RestoreSession")
 mapcmd("<LEADER>sc", ":ClearSession")
@@ -83,19 +87,7 @@ mapcmd("<LEADER>mp", ":MarkdownPreview")
 mapcmd("<LEADER>ms", ":MarkdownPreviewStop")
 mapcmd("<LEADER>mt", ":MarkdownPreviewToggle")
 
--- GoTo Tabs by number
-keymap("", "<LEADER>1", "1gt", opts)
-keymap("", "<LEADER>2", "2gt", opts)
-keymap("", "<LEADER>3", "3gt", opts)
-keymap("", "<LEADER>4", "4gt", opts)
-keymap("", "<LEADER>5", "5gt", opts)
-keymap("", "<LEADER>6", "6gt", opts)
-keymap("", "<LEADER>7", "7gt", opts)
-keymap("", "<LEADER>8", "8gt", opts)
-keymap("", "<LEADER>9", "9gt", opts)
-keymap("", "<LEADER>9", "9gt", opts)
-keymap("", "<LEADER>0", ":tablast<CR>", opts)
-
+keymap("", "<LEADER>cd", ":cd %:p:h<CR>:pwd<CR>", opts)
 -- DiffViewOopen
 keymap("", "<LEADER>di", ":DiffviewOpen<CR>", opts)
 
