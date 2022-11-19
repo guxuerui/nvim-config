@@ -250,7 +250,7 @@ ls.add_snippets(nil, {
       namr = "markdown_code_wrap",
       dscr = "Create markdown code block from existing text",
     }, {
-      text "``` ",
+      text "```",
       insert(1, "Language"),
       text { "", "" },
       func(function(_, snip)
@@ -267,7 +267,7 @@ ls.add_snippets(nil, {
       namr = "markdown_code_empty",
       dscr = "Create empty markdown code block",
     }, {
-      text "``` ",
+      text "```",
       insert(1, "Language"),
       text { "", "" },
       insert(2, "Content"),
