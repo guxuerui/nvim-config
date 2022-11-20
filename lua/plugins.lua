@@ -98,4 +98,6 @@ packer.startup(function(use)
     }
   }
   use 'declancm/cinnamon.nvim'
+  use 'petertriho/nvim-scrollbar'
+  use 'kevinhwang91/nvim-hlslens'
 end)
