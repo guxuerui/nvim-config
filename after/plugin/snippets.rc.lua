@@ -81,7 +81,7 @@ ls.add_snippets(nil, {
       insert(0),
       text { "", "}" },
     }),
-    snip("func", {
+    snip("fc", {
       text "function ",
       insert(1, "Name"),
       text "(",
