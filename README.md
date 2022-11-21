@@ -18,13 +18,13 @@
 
 - `tsserver`
 
-``` bash
+```bash
   npm install -g typescript typescript-language-server
 ```
 
 - `volar`
 
-``` bash
+```bash
   npm install -g @volar/vue-language-server
 ```
 
