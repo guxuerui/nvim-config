@@ -2,6 +2,8 @@
 
 > Ensure you have installed [Neovim](https://neovim.io/)
 
+![alpha-dashboard](https://user-images.githubusercontent.com/23629097/203088825-76f22ad1-5bf0-4e6e-833c-be1f7fc1977c.png)
+
 ## 1. Mason.nvim
 
 [Mason.nvim](https://github.com/williamboman/mason.nvim) is a Neovim plugin that allows you to easily manage external editor tooling such as LSP servers, DAP servers, linters, and formatters through a single interface
