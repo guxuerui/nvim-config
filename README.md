@@ -1,6 +1,6 @@
 <h2 align="left">These are my Neovim config files , require version >= 0.8</h2>
 
-> Ensure have installed [Neovim](https://neovim.io/)
+> Ensure you have installed [Neovim](https://neovim.io/)
 
 ### 1. Need to install language server in [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#html)
 
