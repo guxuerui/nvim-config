@@ -100,4 +100,5 @@ packer.startup(function(use)
   use 'petertriho/nvim-scrollbar'
   use 'kevinhwang91/nvim-hlslens'
   use 'Wansmer/treesj'
+  use 'nvim-zh/colorful-winsep.nvim'
 end)
