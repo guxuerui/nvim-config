@@ -54,12 +54,10 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
--- -- Toggle NERDTree
--- keymap("n", "tt", ":NERDTreeToggle<CR>", opts)
--- mapcmd("tt", ":NERDTreeToggle")
+-- Toggle neo-tree.nvim
 mapcmd("tt", ":NeoTreeShowToggle")
-mapcmd("tf", ":NeoTreeFloatToggle")
-mapcmd("tg", ":Neotree float git_status git_base=main")
+-- mapcmd("tf", ":NeoTreeFloatToggle")
+-- mapcmd("tg", ":Neotree float git_status git_base=main")
 
 -- jump back and forth in frames
 mapkey("n", "<LEADER>l", "<C-w>l", opts)
@@ -89,7 +87,7 @@ mapcmd("<LEADER>mt", ":MarkdownPreviewToggle")
 
 keymap("", "<LEADER>cd", ":cd %:p:h<CR>:pwd<CR>", opts)
 -- DiffViewOopen
-keymap("", "<LEADER>di", ":DiffviewOpen<CR>", opts)
+-- keymap("", "<LEADER>di", ":DiffviewOpen<CR>", opts)
 
 -- split
 mapcmd("sl", "set splitright<CR>:vsplit<CR>")
@@ -128,4 +126,8 @@ mapcmd("<LEADER>lg", "LazyGit")
 maplua("<LEADER>/", 'require("Comment.api").toggle_current_linewise()')
 keymap("v", "<LEADER>/", "<esc><cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<cr>", opts)
 
-
+-- treesj nvim
+-- :TSJToggle :TSJJoin :TSJSplit
+mapcmd("tg", ":TSJToggle")
+mapcmd("tj", ":TSJJoin")
+mapcmd("ts", ":TSJSplit")
