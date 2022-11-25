@@ -74,9 +74,20 @@ mapkey("n", "s", "<Plug>(easymotion-bd-f)", opts)
 mapkey("n", "+", "<C-a>", opts)
 mapkey("n", "-", "<C-x>", opts)
 
--- autosessionn vim
+-- auto-sessionn nvim
+-- :SaveSession " saves or creates a session in the currently set `auto_session_root_dir`.
+-- :SaveSession ~/my/custom/path " saves or creates a session in the specified directory path.
+-- :RestoreSession " restores a previously saved session based on the `cwd`.
+-- :RestoreSession ~/my/custom/path " restores a previously saved session based on the provided path.
+-- :RestoreSessionFromFile ~/session/path " restores any currently saved session
+-- :DeleteSession " deletes a session in the currently set `auto_session_root_dir`.
+-- :DeleteSession ~/my/custom/path " deleetes a session based on the provided path.
+-- :Autosession search
+-- :Autosession delete
+maplua(";fs", "require('session-lens').search_session()")
+mapcmd("<LEADER>fs", ":SearchSession")
 mapcmd("<LEADER>ss", ":SaveSession")
-mapcmd("<LEADER>sl", ":RestoreSession")
+mapcmd("<LEADER>sr", ":RestoreSession")
 mapcmd("<LEADER>sc", ":ClearSession")
 mapcmd("<LEADER>A", ":Alpha")
 
@@ -110,12 +121,11 @@ mapkey("n", ";ff", "<cmd>Telescope find_files<CR>", opts)
 mapkey("n", ";fg", "<cmd>Telescope live_grep<cr>", opts)
 mapkey("n", ";fb", "<cmd>Telescope buffers<cr>", opts)
 mapkey("n", ";fh", "<cmd>Telescope help_tags<cr>", opts)
+mapkey("n", ";fy", "<cmd>Telescope lsp_document_symbols<cr>", opts)
 mapkey("n", ";gc", "<cmd>Telescope git_commits<cr>", opts)
 mapkey("n", ";gbc", "<cmd>Telescope git_bcommits<cr>", opts)
 mapkey("n", ";gbr", "<cmd>Telescope git_branches<cr>", opts)
 mapkey("n", ";gst", "<cmd>Telescope git_status<cr>", opts)
-
-maplua(";fs", "require('session-lens').search_session()")
 
 -- SarchBox Key Bindings
 mapcmd("<LEADER>s", "SearchBoxIncSearch")
