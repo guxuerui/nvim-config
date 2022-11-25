@@ -43,7 +43,7 @@ local options = {
   backspace = 'start,eol,indent',
   shell = 'fish',
   laststatus = 2,
-  foldmethod = 'indent',                  -- manual: 手动定义折叠；indent: 更多的缩进表示更高级别的折叠; expr: 用表达式定义折叠; syntax: 用语法高亮来定义折叠; diff: 对没有更改的文本进行折叠; marker: 对文中的标志进行折叠
+  foldmethod = 'syntax',                  -- manual: 手动定义折叠；indent: 更多的缩进表示更高级别的折叠; expr: 用表达式定义折叠; syntax: 用语法高亮来定义折叠; diff: 对没有更改的文本进行折叠; marker: 对文中的标志进行折叠
 }
 
 vim.opt.shortmess:append "c"
