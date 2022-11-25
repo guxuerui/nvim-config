@@ -101,4 +101,7 @@ packer.startup(function(use)
   use 'kevinhwang91/nvim-hlslens'
   use 'Wansmer/treesj'
   use 'nvim-zh/colorful-winsep.nvim'
+  -- auto-session
+  use 'rmagatti/auto-session'
+  use 'rmagatti/session-lens'
 end)
