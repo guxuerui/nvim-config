@@ -35,7 +35,7 @@ require('lualine').setup {
 		refresh = {
 			statusline = 1000,
 			tabline = 1000,
-			-- winbar = 1000,
+			winbar = 1000,
 		},
   },
   sections = {
@@ -43,7 +43,8 @@ require('lualine').setup {
 			"mode",
 		},
 		lualine_b = { "branch", "diff", "diagnostics" },
-		lualine_c = { "filename" },
+		-- show the current filename and session name,
+    lualine_c = { "filename", require('auto-session-library').current_session_name },
 		lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_y = { "progress" },
 		lualine_z = { "location" },
