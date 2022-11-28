@@ -20,6 +20,7 @@ end
 null_ls.setup({
 	debug = false,
 	sources = {
+    formatting.markdownlint,
 		formatting.eslint_d,
 		diagnostics.eslint_d,
 		--[[ null_ls.builtins.code_actions.gitsigns, ]]
