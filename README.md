@@ -11,7 +11,7 @@
 > Tips: When type :Mason, floating windows may not be visible. One solution is to find the source code of mason.nvim, search the full text for the keyword `zindex` and change its value to 99.
 Or you can see the [About Issue](https://github.com/neovim/neovim/issues/18486).
 
-### 2. Need to install language server, use [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
+## 2. Need to install language server, use [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
 
 [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim). closes some gaps that exist between mason.nvim and lspconfig.
 It is recommended to use this extension if you use mason.nvim and lspconfig (it's strongly recommended for Windows users)
@@ -42,3 +42,25 @@ require("mason").setup({
 })
 ```
 
+## 3. Use markdownlint for markdown file with null-ls.nvim
+
+- First Step
+
+```bash
+npm install -g markdownlint-cli
+```
+
+- Second Step
+
+```lua
+local formatting = null_ls.builtins.formatting
+local diagnostics = null_ls.builtins.diagnostics
+
+null_ls.setup({
+  sources = {
+    formatting.markdownlint,
+    formatting.eslint_d,
+    diagnostics.eslint_d,
+  }
+})
+```
