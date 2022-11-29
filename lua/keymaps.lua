@@ -97,8 +97,6 @@ mapcmd("<LEADER>ms", ":MarkdownPreviewStop")
 mapcmd("<LEADER>mt", ":MarkdownPreviewToggle")
 
 keymap("", "<LEADER>cd", ":cd %:p:h<CR>:pwd<CR>", opts)
--- DiffViewOopen
--- keymap("", "<LEADER>di", ":DiffviewOpen<CR>", opts)
 
 -- split
 mapcmd("sl", "set splitright<CR>:vsplit<CR>")
