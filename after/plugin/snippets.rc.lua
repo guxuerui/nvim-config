@@ -88,9 +88,9 @@ ls.add_snippets(nil, {
       insert(2),
       text ")",
       insert(3),
-      text { " {", "" },
+      text { " {" },
       text "\t",
-      insert(0),
+      -- insert(0),
       text { "", "}" },
     }),
     snip("cfun", {
