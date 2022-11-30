@@ -88,7 +88,7 @@ maplua(";fs", "require('session-lens').search_session()")
 mapcmd("<LEADER>fs", ":SearchSession")
 mapcmd("<LEADER>ss", ":SaveSession")
 mapcmd("<LEADER>sr", ":RestoreSession")
-mapcmd("<LEADER>sc", ":ClearSession")
+mapcmd("<LEADER>ds", ":DeleteSession")
 mapcmd("<LEADER>A", ":Alpha")
 
 -- markdown-preview
