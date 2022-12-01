@@ -104,4 +104,5 @@ packer.startup(function(use)
   -- auto-session
   use 'rmagatti/auto-session'
   use 'rmagatti/session-lens'
+  use 'fladson/vim-kitty'
 end)
