@@ -106,4 +106,5 @@ packer.startup(function(use)
   use 'rmagatti/session-lens'
   use 'fladson/vim-kitty'
   use { "catppuccin/nvim", as = "catppuccin" }
+  use "lukas-reineke/indent-blankline.nvim"
 end)
