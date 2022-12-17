@@ -105,6 +105,7 @@ packer.startup(function(use)
   use 'rmagatti/auto-session'
   use 'rmagatti/session-lens'
   use 'fladson/vim-kitty'
+  -- This is a color scheme
   use { "catppuccin/nvim", as = "catppuccin" }
   use "lukas-reineke/indent-blankline.nvim"
 end)
