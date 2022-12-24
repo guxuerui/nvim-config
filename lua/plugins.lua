@@ -108,4 +108,5 @@ packer.startup(function(use)
   -- This is a color scheme
   use { "catppuccin/nvim", as = "catppuccin" }
   use "lukas-reineke/indent-blankline.nvim"
+  use 'rareitems/printer.nvim'
 end)
