@@ -88,7 +88,6 @@ lspconfig.setup {
     "rust_analyzer",
     "volar",
     "eslint",
-    "eslint_d",
     "svelte",
     "marksman"
   },
