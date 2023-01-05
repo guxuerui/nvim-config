@@ -4,10 +4,8 @@ if (not status) then return end
 winsep.setup({
   -- highlight for Window separator
   highlight = {
-    -- guibg = "#16161E", -- bg
-    -- guifg = "#1F3442", -- line
-    -- guibg = "#86c166",
-    guifg = "#86c166",
+    -- bg = "#f63111",
+    fg = "#86c166",
   },
   -- timer refresh rate
   interval = 30,
