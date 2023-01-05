@@ -88,7 +88,6 @@ packer.startup(function(use)
   use 'lewis6991/impatient.nvim'
   use 'sunjon/shade.nvim'
   use 'metakirby5/codi.vim'
-  use 'kdheepak/lazygit.nvim' 
   use 'yamatsum/nvim-cursorline'
   use {
     'VonHeikemen/searchbox.nvim',
