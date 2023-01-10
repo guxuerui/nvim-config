@@ -108,4 +108,5 @@ packer.startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
   use "lukas-reineke/indent-blankline.nvim"
   use 'rareitems/printer.nvim'
+  use { "shortcuts/no-neck-pain.nvim", tag = "*" }
 end)
