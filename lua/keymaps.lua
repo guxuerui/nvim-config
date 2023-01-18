@@ -56,7 +56,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Toggle neo-tree.nvim
 mapcmd("tt", ":NeoTreeShowToggle")
-mapcmd("np", ":NoNeckPain")
+mapcmd("tp", ":NoNeckPain")
 -- mapcmd("tf", ":NeoTreeFloatToggle")
 -- mapcmd("tg", ":Neotree float git_status git_base=main")
 
