@@ -109,4 +109,5 @@ packer.startup(function(use)
   use "lukas-reineke/indent-blankline.nvim"
   use 'rareitems/printer.nvim'
   use { "shortcuts/no-neck-pain.nvim", tag = "*" }
+  use 'echasnovski/mini.nvim'
 end)
