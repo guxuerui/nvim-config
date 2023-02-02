@@ -1,3 +1,4 @@
+-- Setting specific file types does not work
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "help", "alpha", "dashboard", "neo-tree", "Trouble", "lazy", "mason" },
   callback = function()
