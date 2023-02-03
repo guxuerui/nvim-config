@@ -17,7 +17,7 @@ Or you can see the [About Issue](https://github.com/neovim/neovim/issues/18486).
 It is recommended to use this extension if you use mason.nvim and lspconfig (it's strongly recommended for Windows users)
 
 ```lua
-// plugin/mason.rc.lua
+-- plugin/mason.rc.lua
 require("mason").setup({
   -- ensure installed
   ensure_installed = {
