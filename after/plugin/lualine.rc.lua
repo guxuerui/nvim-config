@@ -46,6 +46,7 @@ require('lualine').setup {
 		-- show the current filename and session name,
     lualine_c = { "filename", require('auto-session-library').current_session_name },
 		lualine_x = { "encoding", "fileformat", "filetype" },
+		-- lualine_x = { "encoding", "fileformat", "filetype", require("wpm").wpm, require("wpm").historic_graph },
 		lualine_y = { "progress" },
 		lualine_z = { "location" },
 	},
