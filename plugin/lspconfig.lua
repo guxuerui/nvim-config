@@ -64,7 +64,7 @@ require("lspconfig").volar.setup({
 		formatting_callback(client, bufnr)
 		on_attach(client, bufnr)
 	end,
-	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "svelte" },
+	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 	--[[ capabilities = capabilities, ]]
 	capabilities = capabilities,
 	flags = lsp_flags,
