@@ -11,6 +11,12 @@ packer.startup(function(use)
   -- Your plugins go here
   use 'Shatur/neovim-ayu'
   use {
+    "jcdickinson/wpm.nvim",
+    config = function()
+      require("wpm").setup({})
+    end
+  }
+  use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
@@ -105,6 +111,7 @@ packer.startup(function(use)
   use 'rmagatti/session-lens'
   use 'fladson/vim-kitty'
   -- This is a color scheme
+  use 'folke/tokyonight.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
   use "lukas-reineke/indent-blankline.nvim"
   use 'rareitems/printer.nvim'
