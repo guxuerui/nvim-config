@@ -8,19 +8,16 @@ local keymap = vim.api.nvim_set_keymap
 keymap("", "<Space>", "<Nop>", opts)
 keymap("", ";", ":", opts)
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 local function mapkey(mode, lhs, rhs)
-    vim.api.nvim_set_keymap(mode, lhs, rhs, {noremap=true})
+  vim.api.nvim_set_keymap(mode, lhs, rhs, { noremap = true })
 end
 
 local function mapcmd(key, cmd)
-    vim.api.nvim_set_keymap('n', key, ':'..cmd..'<cr>', {noremap=true})
+  vim.api.nvim_set_keymap('n', key, ':' .. cmd .. '<cr>', { noremap = true })
 end
 
 local function maplua(key, txt)
-    vim.api.nvim_set_keymap('n', key, ':lua '..txt..'<cr>', {noremap=true})
+  vim.api.nvim_set_keymap('n', key, ':lua ' .. txt .. '<cr>', { noremap = true })
 end
 
 --Remap space as leader key
@@ -37,7 +34,9 @@ mapcmd("<LEADER><CR>", "noh")
 --   term_mode = "t",
 --   command_mode = "c",
 --
-keymap("n", "S", ":w<CR> :lua vim.notify('Save Complete', 'info', { title = 'User Operation', timeout = 1000, stages = 'fade_in_slide_out'})<CR>", opts)
+keymap("n", "S",
+  ":w<CR> :lua vim.notify('Save Complete', 'info', { title = 'User Operation', timeout = 1000, stages = 'fade_in_slide_out'})<CR>"
+  , opts)
 keymap("n", "Q", ":q!<CR>", opts)
 keymap("", "R", ":source $MYVIMRC<CR>", opts)
 keymap("", "cd", ":chdir", opts)
@@ -61,19 +60,19 @@ mapcmd("tp", ":NoNeckPain")
 -- mapcmd("tg", ":Neotree float git_status git_base=main")
 
 -- jump back and forth in frames
-mapkey("n", "<LEADER>l", "<C-w>l", opts)
-mapkey("n", "<LEADER>h", "<C-w>h", opts)
-mapkey("n", "<LEADER>j", "<C-w>j", opts)
-mapkey("n", "<LEADER>k", "<C-w>k", opts)
-mapkey("n", "<LEADER><LEADER>", "<C-f>", opts)
-mapkey("n", "<LEADER>bb", "<C-b>", opts)
-mapkey("n", "<LEADER>sv", "<C-w>t<C-w>H", opts)
-mapkey("n", "<LEADER>sh", "<C-w>t<C-w>K", opts)
-mapkey("n", "s", "<Plug>(easymotion-bd-f)", opts)
+mapkey("n", "<LEADER>l", "<C-w>l")
+mapkey("n", "<LEADER>h", "<C-w>h")
+mapkey("n", "<LEADER>j", "<C-w>j")
+mapkey("n", "<LEADER>k", "<C-w>k")
+mapkey("n", "<LEADER><LEADER>", "<C-f>")
+mapkey("n", "<LEADER>bb", "<C-b>")
+mapkey("n", "<LEADER>sv", "<C-w>t<C-w>H")
+mapkey("n", "<LEADER>sh", "<C-w>t<C-w>K")
+mapkey("n", "s", "<Plug>(easymotion-bd-f)")
 
 -- refactor C-a and C-x
-mapkey("n", "+", "<C-a>", opts)
-mapkey("n", "-", "<C-x>", opts)
+mapkey("n", "+", "<C-a>")
+mapkey("n", "-", "<C-x>")
 
 -- auto-sessionn nvim
 -- :SaveSession " saves or creates a session in the currently set `auto_session_root_dir`.
@@ -116,15 +115,15 @@ mapcmd("th", ":TablineBufferPrevious")
 mapcmd("tl", ":TablineBufferNext")
 
 mapkey("n", ";fe", "<cmd>Telescope file_browser<cr>")
-mapkey("n", ";ff", "<cmd>Telescope find_files<CR>", opts)
-mapkey("n", ";fg", "<cmd>Telescope live_grep<cr>", opts)
-mapkey("n", ";fb", "<cmd>Telescope buffers<cr>", opts)
-mapkey("n", ";fh", "<cmd>Telescope help_tags<cr>", opts)
-mapkey("n", ";fy", "<cmd>Telescope lsp_document_symbols<cr>", opts)
-mapkey("n", ";gc", "<cmd>Telescope git_commits<cr>", opts)
-mapkey("n", ";gbc", "<cmd>Telescope git_bcommits<cr>", opts)
-mapkey("n", ";gbr", "<cmd>Telescope git_branches<cr>", opts)
-mapkey("n", ";gst", "<cmd>Telescope git_status<cr>", opts)
+mapkey("n", ";ff", "<cmd>Telescope find_files<CR>")
+mapkey("n", ";fg", "<cmd>Telescope live_grep<cr>")
+mapkey("n", ";fb", "<cmd>Telescope buffers<cr>")
+mapkey("n", ";fh", "<cmd>Telescope help_tags<cr>")
+mapkey("n", ";fy", "<cmd>Telescope lsp_document_symbols<cr>")
+mapkey("n", ";gc", "<cmd>Telescope git_commits<cr>")
+mapkey("n", ";gbc", "<cmd>Telescope git_bcommits<cr>")
+mapkey("n", ";gbr", "<cmd>Telescope git_branches<cr>")
+mapkey("n", ";gst", "<cmd>Telescope git_status<cr>")
 
 -- SarchBox Key Bindings
 mapcmd("<LEADER>s", "SearchBoxIncSearch")

@@ -6,8 +6,14 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
-require('mini.indentscope').setup {
-  symbol = "│",
-  options = { try_as_border = true },
+return {
+  {
+    'echasnovski/mini.nvim',
+    config = function ()
+      require('mini.indentscope').setup {
+        symbol = "│",
+        options = { try_as_border = true },
+      }
+    end
+  }
 }
-
