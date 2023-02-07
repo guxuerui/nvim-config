@@ -26,7 +26,6 @@ return {
   },
   "junegunn/fzf",
   "junegunn/fzf.vim",
-  -- 'nvim-treesitter/nvim-treesitter',
   {
     'windwp/nvim-autopairs',
     config = function()
@@ -43,26 +42,17 @@ return {
       },
     },
   },
-  'kyazdani42/nvim-web-devicons',
   {
     'nvim-telescope/telescope.nvim', version = '0.1.0',
     -- or                            , branch = '0.1.x',
     dependencies = { { 'nvim-lua/plenary.nvim' } }
   },
-  'nvim-telescope/telescope-file-browser.nvim',
-  -- {
-  --   "glepnir/lspsaga.nvim",
-  --   keys = {
-  --     { "gpr", "<cmd>Lspsaga lsp_finder<CR>", "n" },
-  --     { "<leader>lr", "<cmd>Lspsaga rename<CR>" },
-  --     { "<leader>la", "<cmd>Lspsaga code_action<CR>", "n, v" },
-  --     { "gpd", "<cmd>Lspsaga peek_definition<CR>" },
-  --     { "<leader>lsd", "<cmd>Lspsaga show_line_diagnostics<CR>" },
-  --     { "<leader>so", "<cmd>Lspsaga outline<CR>" },
-  --     { "K", "<cmd>Lspsaga hover_doc<CR>" },
-  --   },
-  -- },
-  'jose-elias-alvarez/null-ls.nvim',
+  {
+    'nvim-telescope/telescope-file-browser.nvim',
+    config = function()
+      require("telescope").load_extension "file_browser"
+    end
+  },
   {
     "lewis6991/gitsigns.nvim",
     event = "BufReadPre",
@@ -73,20 +63,6 @@ return {
       })
     end,
   },
-  -- {
-  --   "folke/noice.nvim",
-  --   config = function()
-  --     require("noice").setup()
-  --   end,
-  --   dependencies = {
-  --     -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-  --     "MunifTanjim/nui.nvim",
-  --     -- OPTIONAL:
-  --     --   `nvim-notify` is only needed, if you want to the notification view.
-  --     --   If not available, we `mini` as the fallback
-  --     "rcarriga/nvim-notify",
-  --     }
-  -- },
   {
     "norcalli/nvim-colorizer.lua",
     opts = {
@@ -100,19 +76,10 @@ return {
     branch = "v2.x",
     dependencies = {
       "nvim-lua/plenary.nvim",
-      "kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
       "MunifTanjim/nui.nvim",
     }
   },
-  -- {
-  --   "folke/which-key.nvim",
-  --   -- event = "VeryLazy",
-  --   config = function()
-  --     vim.o.timeout = true
-  --     vim.o.timeoutlen = 300
-  --     require("which-key").setup({})
-  --   end,
-  -- },
   "easymotion/vim-easymotion",
   {
     'numToStr/Comment.nvim',
@@ -140,24 +107,6 @@ return {
   --   }
   -- },
   'metakirby5/codi.vim',
-  {
-    'yamatsum/nvim-cursorline',
-    lazy = false,
-    config = function()
-      require("nvim-cursorline").setup({
-        cursorline = {
-          enable = true,
-          timeout = 1000,
-          number = true,
-        },
-        cursorword = {
-          enable = true,
-          min_length = 3,
-          hl = { underline = true },
-        }
-      })
-    end
-  },
   {
     'VonHeikemen/searchbox.nvim',
     dependencies = {
@@ -232,7 +181,6 @@ return {
       prompt_title = 'YEAH SESSIONS',
     }
   },
-  'fladson/vim-kitty',
   "lukas-reineke/indent-blankline.nvim",
   {
     "shortcuts/no-neck-pain.nvim",
@@ -240,18 +188,5 @@ return {
     opts = {
       width = 200,
     }
-  },
-  {
-    "glepnir/lspsaga.nvim",
-    lazy = false,
-    keys = {
-      { "gpr", "<cmd>Lspsaga lsp_finder<CR>", "n" },
-      { "<leader>lr", "<cmd>Lspsaga rename<CR>" },
-      { "<leader>la", "<cmd>Lspsaga code_action<CR>", "n, v" },
-      { "gpd", "<cmd>Lspsaga peek_definition<CR>" },
-      { "<leader>lsd", "<cmd>Lspsaga show_line_diagnostics<CR>" },
-      { "<leader>so", "<cmd>Lspsaga outline<CR>" },
-      { "K", "<cmd>Lspsaga hover_doc<CR>" },
-    },
   },
 }

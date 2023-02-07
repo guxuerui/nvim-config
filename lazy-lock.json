@@ -55,7 +55,6 @@
   "tokyonight": { "branch": "main", "commit": "affb21a81e6d7de073378eb86d02864c594104d9" },
   "treesj": { "branch": "main", "commit": "fa9adb2a1c381a4fc5492835358827ab82c426de" },
   "vim-easymotion": { "branch": "master", "commit": "b3cfab2a6302b3b39f53d9fd2cd997e1127d7878" },
-  "vim-kitty": { "branch": "main", "commit": "d4c60f096b751c1462c80cbf42550e29c8cd2983" },
   "which-key.nvim": { "branch": "main", "commit": "684e96c5e8477f1ee9b3f2e9a12d802fd12c5531" },
   "wpm.nvim": { "branch": "main", "commit": "968c213143311cd07acb299ebe5445f68ae57a67" }
 }

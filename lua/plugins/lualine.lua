@@ -2,8 +2,8 @@ return {
   {
     'nvim-lualine/lualine.nvim',
     lazy = false,
-    dependencies = { 'kyazdani42/nvim-web-devicons' },
-    config = function ()
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    config = function()
       require('lualine').setup {
         options = {
           icons_enabled = true,
@@ -43,8 +43,9 @@ return {
           lualine_z = {},
         },
         tabline = {},
-        extensions = { 'fzf','neo-tree', 'fugitive' }
+        extensions = { 'fzf', 'neo-tree', 'fugitive' }
       }
     end
   },
 }
+
