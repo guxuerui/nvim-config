@@ -18,7 +18,19 @@ return {
           "vim",
           "help",
         }, -- one of "all",
-        highlight = { enable = true },
+        sync_install = true,
+        ignore_install = { "php", "phpdoc" },
+        highlight = {
+          enable = true,
+          additional_vim_regex_highlighting = true,
+        },
+        indent = {
+          enable = true,
+        },
+        context_commentstring = {
+          enable = true,
+          enable_autocmd = false,
+        },
         rainbow = {
           enable = true,
           -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
@@ -31,4 +43,3 @@ return {
     end,
   }
 }
-
