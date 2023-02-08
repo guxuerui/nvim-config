@@ -2,6 +2,8 @@
 
 > Ensure you have installed [Neovim](https://neovim.io/)
 
+![preview](https://user-images.githubusercontent.com/23629097/217407314-6c672021-c42f-46af-9e2e-62afaea1858d.png)
+
 <!-- ![alpha-dashboard](https://user-images.githubusercontent.com/23629097/203088825-76f22ad1-5bf0-4e6e-833c-be1f7fc1977c.png) -->
 
 ## 1. Mason.nvim
