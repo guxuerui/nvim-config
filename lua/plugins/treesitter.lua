@@ -17,6 +17,7 @@ return {
           "svelte",
           "vim",
           "help",
+          "astro",
         }, -- one of "all",
         sync_install = true,
         ignore_install = { "php", "phpdoc" },
