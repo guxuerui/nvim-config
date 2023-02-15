@@ -38,7 +38,10 @@ return {
     })
 
     null_ls.builtins.formatting.eslint_d.with({
-      extra_args = { "--style", "{IndentWidth: 2 ,ColumnLimit: 120}" },
+      extra_args = {
+        "--style",
+        "{IndentWidth: 2 ,ColumnLimit: 120}",
+      },
     })
   end
 }
