@@ -18,6 +18,8 @@ return {
           "vim",
           "help",
           "astro",
+          "markdown",
+          "markdown_inline",
         }, -- one of "all",
         sync_install = true,
         ignore_install = { "php", "phpdoc" },
