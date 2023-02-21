@@ -9,9 +9,6 @@ return {
     local format = function(payload)
       vim.lsp.buf.format({
         async = false,
-        --[[ filter = function(clients) ]]
-        --[[ 	return client.name == "null-ls" ]]
-        --[[ end, ]]
       })
     end
 
@@ -21,8 +18,6 @@ return {
         formatting.markdownlint, -- need install: npm install -g markdownlint-cli
         formatting.eslint_d,
         diagnostics.eslint_d,
-        --[[ null_ls.builtins.code_actions.gitsigns, ]]
-        --[[ null_ls.builtins.completion.spell, ]]
       },
       -- you can reuse a shared lspconfig on_attach callback here
       on_attach = function(client, bufnr)
