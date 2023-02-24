@@ -94,18 +94,6 @@ return {
   },
   'mattn/emmet-vim',
   "wellle/context.vim",
-  -- {
-  --   'sunjon/shade.nvim',
-  --   opts = {
-  --     overlay_opacity = 50,
-  --     opacity_step = 1,
-  --     keys = {
-  --       brightness_up   = '<C-Up>',
-  --       brightness_down = '<C-Down>',
-  --       toggle          = '<Leader>t',
-  --     }
-  --   }
-  -- },
   'metakirby5/codi.vim',
   {
     'VonHeikemen/searchbox.nvim',
@@ -152,7 +140,7 @@ return {
       cursor_behavior = 'hold',
       -- Notify about possible problems or not
       notify = true,
-      langs = langs,
+      -- langs = langs,
     }
   },
   {
