@@ -9,13 +9,14 @@ vim.api.nvim_create_autocmd("FileType", {
 return {
   {
     'echasnovski/mini.nvim',
-    version = '*',
+    version = false,
     config = function()
       require('mini.indentscope').setup {
         symbol = "│",
         options = { try_as_border = true },
       }
       require('mini.cursorword').setup()
+      require('mini.bracketed').setup()
     end
   }
 }
