@@ -124,6 +124,7 @@ mapkey("n", ";gc", "<cmd>Telescope git_commits<cr>")
 mapkey("n", ";gbc", "<cmd>Telescope git_bcommits<cr>")
 mapkey("n", ";gbr", "<cmd>Telescope git_branches<cr>")
 mapkey("n", ";gst", "<cmd>Telescope git_status<cr>")
+mapkey("n", ";b", "<cmd>%bd|e#|bd#<cr>")
 
 -- SarchBox Key Bindings
 mapcmd("<LEADER>s", "SearchBoxIncSearch")
