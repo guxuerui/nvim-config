@@ -76,12 +76,6 @@ return {
   'mattn/emmet-vim',
   "wellle/context.vim",
   'metakirby5/codi.vim',
-  {
-    'VonHeikemen/searchbox.nvim',
-    dependencies = {
-      { 'MunifTanjim/nui.nvim' }
-    }
-  },
   'petertriho/nvim-scrollbar',
   {
     'kevinhwang91/nvim-hlslens',
