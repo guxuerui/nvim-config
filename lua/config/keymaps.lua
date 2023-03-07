@@ -114,6 +114,8 @@ mapcmd("<M-right>", "vertical resize +5<cr>")
 mapcmd("th", ":TablineBufferPrevious")
 mapcmd("tl", ":TablineBufferNext")
 
+mapkey("n", "dw", 'vb"_d')
+mapkey("n", '<C-a>', 'gg<S-v>G')
 mapkey("n", ";fe", "<cmd>Telescope file_browser<cr>")
 mapkey("n", ";ff", "<cmd>Telescope find_files<CR>")
 mapkey("n", ";fg", "<cmd>Telescope live_grep<cr>")
