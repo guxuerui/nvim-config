@@ -8,6 +8,7 @@ return {
         ensure_installed = {
           "javascript",
           "css",
+          "scss",
           "typescript",
           "json",
           "vue",
