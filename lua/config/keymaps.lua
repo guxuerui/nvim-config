@@ -26,6 +26,18 @@ mapcmd("S", "<Nop>")
 mapcmd("R", "<Nop>")
 mapcmd("<LEADER><CR>", "noh")
 
+-- move.nvim
+keymap('n', '<C-j>', ':MoveLine(1)<CR>', opts)
+keymap('n', '<C-k>', ':MoveLine(-1)<CR>', opts)
+keymap('n', '<C-h>', ':MoveHChar(-1)<CR>', opts)
+keymap('n', '<C-l>', ':MoveHChar(1)<CR>', opts)
+
+-- move.nvim's  visual-mode commands
+keymap('v', '<C-j>', ':MoveBlock(1)<CR>', opts)
+keymap('v', '<C-k>', ':MoveBlock(-1)<CR>', opts)
+keymap('v', '<C-h>', ':MoveHBlock(-1)<CR>', opts)
+keymap('v', '<C-l>', ':MoveHBlock(1)<CR>', opts)
+
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
