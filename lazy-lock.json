@@ -9,6 +9,7 @@
   "cmp-nvim-lua": { "branch": "main", "commit": "f3491638d123cfd2c8048aefaf66d246ff250ca6" },
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
   "cmp_luasnip": { "branch": "master", "commit": "18095520391186d634a0045dacaa346291096566" },
+  "codeium.vim": { "branch": "main", "commit": "b41b99e8a2c3b4adf0bbbfb59967bc3df1dd3948" },
   "codi.vim": { "branch": "master", "commit": "83b9859aaf8066d95892e01eb9c01571a4b325dd" },
   "colorful-winsep.nvim": { "branch": "main", "commit": "25f470b3fab1f639616d06078675cbd017b5abbb" },
   "context.vim": { "branch": "master", "commit": "c06541451aa94957c1c07a9f8a7130ad97d83a65" },
