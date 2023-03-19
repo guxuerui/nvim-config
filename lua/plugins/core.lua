@@ -132,4 +132,5 @@ return {
       width = 200,
     }
   },
+  "fedepujol/move.nvim"
 }
