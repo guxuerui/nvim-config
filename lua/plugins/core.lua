@@ -115,7 +115,7 @@ return {
     }
   },
   -- auto-session
-  'rmagatti/auto-session',
+  "rmagatti/auto-session",
   {
     'rmagatti/session-lens',
     opts = {
