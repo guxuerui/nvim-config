@@ -99,7 +99,7 @@ return {
     }
   },
   {
-    'nvim-zh/colorful-winsep.nvim',
+    "nvim-zh/colorful-winsep.nvim",
     opts = {
       -- highlight for Window separator
       highlight = {
@@ -134,13 +134,23 @@ return {
   },
   "fedepujol/move.nvim",
   {
-    'Exafunction/codeium.vim',
+    "Exafunction/codeium.vim",
     config = function()
       -- Change '<C-g>' here to any keycode you like.
       vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true })
       vim.keymap.set('i', '<C-;>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true })
       vim.keymap.set('i', '<C-,>', function() return vim.fn['codeium#CycleCompletions'](-3) end, { expr = true })
       vim.keymap.set('i', '<C-x>', function() return vim.fn['codeium#Clear']() end, { expr = true })
+    end
+  },
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
     end
   }
 }
