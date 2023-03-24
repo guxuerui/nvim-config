@@ -152,5 +152,10 @@ return {
         -- Configuration here, or leave empty to use defaults
       })
     end
-  }
+  },
+  {
+    "chrishrb/gx.nvim",
+    event = { "BufEnter" },
+    config = true, -- default settings
+  },
 }
