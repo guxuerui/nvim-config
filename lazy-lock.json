@@ -14,6 +14,7 @@
   "colorful-winsep.nvim": { "branch": "main", "commit": "7a4dd007aa03bfbf0650b561db795740205114dd" },
   "context.vim": { "branch": "master", "commit": "c06541451aa94957c1c07a9f8a7130ad97d83a65" },
   "emmet-vim": { "branch": "master", "commit": "def5d57a1ae5afb1b96ebe83c4652d1c03640f4d" },
+  "error-lens.nvim": { "branch": "main", "commit": "a0e3e05d63a36b401555633c3a6ca3b6edf1bdff" },
   "friendly-snippets": { "branch": "main", "commit": "25ddcd96540a2ce41d714bd7fea2e7f75fea8ead" },
   "fzf": { "branch": "master", "commit": "a874aea69213471d08a365bb5396e8beec51aa9a" },
   "fzf.vim": { "branch": "master", "commit": "dc71692255b62d1f67dc55c8e51ab1aa467b1d46" },
