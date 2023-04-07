@@ -1,10 +1,44 @@
-<h2 align="left">These are my Neovim config files , require version >= 0.8</h2>
+# These are my Neovim config files , require version >= 0.8
 
 > Ensure you have installed [Neovim](https://neovim.io/)
 
 ![preview](https://user-images.githubusercontent.com/23629097/217407314-6c672021-c42f-46af-9e2e-62afaea1858d.png)
 
-<!-- ![alpha-dashboard](https://user-images.githubusercontent.com/23629097/203088825-76f22ad1-5bf0-4e6e-833c-be1f7fc1977c.png) -->
+## :file_folder: File Structure
+
+```bash
+# ~/.config/nvim
+├── images
+│  ├── alpha-dashboard.png
+│  └── preview.png
+├── init.lua
+├── lazy-lock.json
+├── LICENSE
+├── lua
+│  ├── config
+│  │  ├── base.lua
+│  │  ├── keymaps.lua
+│  │  ├── lazy.lua
+│  │  └── options.lua
+│  └── plugins
+│     ├── alpha.lua
+│     ├── cinnamon.lua
+│     ├── colorscheme.lua
+│     ├── core.lua
+│     ├── lsp.lua
+│     ├── lspsaga.lua
+│     ├── lualine.lua
+│     ├── mini-indent.lua
+│     ├── neodim.lua
+│     ├── noice.lua
+│     ├── null-ls.lua
+│     ├── print.lua
+│     ├── searchbox.lua
+│     ├── tabline.lua
+│     ├── treesitter.lua
+│     └── which-key.lua
+└── README.md
+```
 
 ## 1. Mason.nvim
 
