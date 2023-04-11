@@ -4,12 +4,15 @@ return {
     build = ":TSUpdate",
     event = "BufReadPost",
     config = function()
+      local ft_to_parser = require("nvim-treesitter.parsers").filetype_to_parsername
+      ft_to_parser.mdx = "markdown"
       require("nvim-treesitter.configs").setup({
         ensure_installed = {
           "javascript",
           "css",
           "scss",
           "typescript",
+          "tsx",
           "json",
           "vue",
           "python",

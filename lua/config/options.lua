@@ -46,6 +46,13 @@ local options = {
   foldmethod = 'syntax', -- manual: 手动定义折叠；indent: 更多的缩进表示更高级别的折叠; expr: 用表达式定义折叠; syntax: 用语法高亮来定义折叠; diff: 对没有更改的文本进行折叠; marker: 对文中的标志进行折叠
 }
 
+-- add filetypes mdx to support code highlight
+vim.filetype.add({
+  extension = {
+    mdx = 'mdx'
+  }
+})
+
 vim.opt.shortmess:append "c"
 -- Add asterisks in block comments
 vim.opt.formatoptions:append { 'r' }
