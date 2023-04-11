@@ -51,6 +51,10 @@ keymap("n", "Q", ":q!<CR>", opts)
 keymap("", "R", ":source $MYVIMRC<CR>", opts)
 keymap("", "cd", ":chdir", opts)
 
+-- Start: These are Neovim's build-in defaults commands (see :help nvim_buf_set_keymap)
+mapkey("n", "dw", 'vb"_d')
+mapkey("n", '<C-a>', 'gg<S-v>G')
+
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
@@ -62,6 +66,7 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+-- End
 
 -- Toggle neo-tree.nvim
 mapcmd("tt", ":NeoTreeShowToggle")
@@ -124,8 +129,6 @@ mapcmd("<M-right>", "vertical resize +5<cr>")
 mapcmd("th", ":TablineBufferPrevious")
 mapcmd("tl", ":TablineBufferNext")
 
-mapkey("n", "dw", 'vb"_d')
-mapkey("n", '<C-a>', 'gg<S-v>G')
 mapkey("n", ";fe", "<cmd>Telescope file_browser<cr>")
 mapkey("n", ";ff", "<cmd>Telescope find_files<CR>")
 mapkey("n", ";fg", "<cmd>Telescope live_grep<cr>")
