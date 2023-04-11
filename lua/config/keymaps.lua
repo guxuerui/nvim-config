@@ -43,7 +43,7 @@ keymap('v', '<C-l>', ':MoveHBlock(1)<CR>', opts)
 --   visual_block_mode = "x",
 --   term_mode = "t",
 --   command_mode = "c",
---
+
 keymap("n", "S",
   ":w<CR> :lua vim.notify('Save Complete', 'info', { title = 'User Operation', timeout = 1000, stages = 'fade_in_slide_out'})<CR>"
   , opts)
