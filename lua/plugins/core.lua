@@ -100,18 +100,13 @@ return {
   },
   {
     "nvim-zh/colorful-winsep.nvim",
+    event = { "WinNew" },
     opts = {
       -- highlight for Window separator
       highlight = {
         -- bg = "#f63111",
         fg = "#86c166",
       },
-      -- timer refresh rate
-      interval = 30,
-      -- This plugin will not be activated for filetype in the following table.
-      no_exec_files = { "packer", "TelescopePrompt", "mason", "CompetiTest", "NvimTree" },
-      -- Symbols for separator lines, the order: horizontal, vertical, top left, top right, bottom left, bottom right.
-      symbols = { "━", "┃", "┏", "┓", "┗", "┛" },
     }
   },
   -- auto-session
