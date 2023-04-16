@@ -1,6 +1,10 @@
-# These are my Neovim config files , require version >= 0.8.3
+# These are my Neovim configuration files
 
 > Ensure you have installed [Neovim](https://neovim.io/)
+
+## Requirements
+
+* Neovim >= v0.8.3
 
 ![preview](https://user-images.githubusercontent.com/23629097/217407314-6c672021-c42f-46af-9e2e-62afaea1858d.png)
 
@@ -80,13 +84,13 @@ require("mason").setup({
 
 ## 3. Use markdownlint for markdown file with null-ls.nvim
 
-- First Step
+* First Step
 
 ```bash
 npm install -g markdownlint-cli
 ```
 
-- Second Step
+* Second Step
 
 ```lua
 local formatting = null_ls.builtins.formatting
