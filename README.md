@@ -1,4 +1,4 @@
-# These are my Neovim config files , require version >= 0.8
+# These are my Neovim config files , require version >= 0.8.3
 
 > Ensure you have installed [Neovim](https://neovim.io/)
 
