@@ -53,6 +53,7 @@
   "printer.nvim": { "branch": "master", "commit": "8f8732a6e299cba8b1ad6a45173dfe8f99cbf10f" },
   "searchbox.nvim": { "branch": "main", "commit": "110949af8963185b4e732b45ae57beb731bfcede" },
   "session-lens": { "branch": "main", "commit": "b15e36782d01abacf6cd44e12f3292632064ab91" },
+  "shade.nvim": { "branch": "master", "commit": "4286b5abc47d62d0c9ffb22a4f388b7bf2ac2461" },
   "tabline.nvim": { "branch": "main", "commit": "5d76dc8616b4b7b892229cc05cd0f4cd0200077a" },
   "telescope-file-browser.nvim": { "branch": "master", "commit": "e0fcb12702ad0d2873544a31730f9aaef04fd032" },
   "telescope.nvim": { "branch": "master", "commit": "b79cd6c88b3d96b0f49cb7d240807cd59b610cd8" },
