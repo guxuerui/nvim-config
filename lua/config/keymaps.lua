@@ -89,6 +89,19 @@ mapkey("n", "s", "<Plug>(easymotion-bd-f)")
 mapkey("n", "+", "<C-a>")
 mapkey("n", "-", "<C-x>")
 
+-- telescope
+mapkey("n", ";fe", "<cmd>Telescope file_browser<cr>")
+mapkey("n", ";ff", "<cmd>Telescope find_files<CR>")
+mapkey("n", ";fg", "<cmd>Telescope live_grep<cr>")
+mapkey("n", ";fb", "<cmd>Telescope buffers<cr>")
+mapkey("n", ";fh", "<cmd>Telescope help_tags<cr>")
+mapkey("n", ";fy", "<cmd>Telescope lsp_document_symbols<cr>")
+mapkey("n", ";gc", "<cmd>Telescope git_commits<cr>")
+mapkey("n", ";gbc", "<cmd>Telescope git_bcommits<cr>")
+mapkey("n", ";gbr", "<cmd>Telescope git_branches<cr>")
+mapkey("n", ";gst", "<cmd>Telescope git_status<cr>")
+mapkey("n", ";b", "<cmd>%bd|e#|bd#<cr>")
+
 -- auto-sessionn nvim
 -- :SaveSession " saves or creates a session in the currently set `auto_session_root_dir`.
 -- :SaveSession ~/my/custom/path " saves or creates a session in the specified directory path.
@@ -128,18 +141,6 @@ mapcmd("<M-right>", "vertical resize +5<cr>")
 
 mapcmd("th", ":TablineBufferPrevious")
 mapcmd("tl", ":TablineBufferNext")
-
-mapkey("n", ";fe", "<cmd>Telescope file_browser<cr>")
-mapkey("n", ";ff", "<cmd>Telescope find_files<CR>")
-mapkey("n", ";fg", "<cmd>Telescope live_grep<cr>")
-mapkey("n", ";fb", "<cmd>Telescope buffers<cr>")
-mapkey("n", ";fh", "<cmd>Telescope help_tags<cr>")
-mapkey("n", ";fy", "<cmd>Telescope lsp_document_symbols<cr>")
-mapkey("n", ";gc", "<cmd>Telescope git_commits<cr>")
-mapkey("n", ";gbc", "<cmd>Telescope git_bcommits<cr>")
-mapkey("n", ";gbr", "<cmd>Telescope git_branches<cr>")
-mapkey("n", ";gst", "<cmd>Telescope git_status<cr>")
-mapkey("n", ";b", "<cmd>%bd|e#|bd#<cr>")
 
 -- SarchBox Key Bindings
 mapcmd("<LEADER>s", "SearchBoxIncSearch")
