@@ -67,10 +67,6 @@ vim.cmd('autocmd!')
 vim.cmd('syntax on')
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
--- Undercurl
-vim.cmd([[let &t_Cs = "\e[4:3m"]])
-vim.cmd([[let &t_Ce = "\e[4:0m"]])
--- but this dosen't work on iTerm2. Need to verify.
 
 -- auto remove highlight after searching was completed
 local function manage_hlsearch(char)
