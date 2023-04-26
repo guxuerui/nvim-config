@@ -8,7 +8,7 @@ return {
   "junegunn/fzf",
   "junegunn/fzf.vim",
   {
-    'windwp/nvim-autopairs',
+    "windwp/nvim-autopairs",
     config = function()
       require("nvim-autopairs").setup({
         disable_filetype = { "TelescopePrompt", "vim" },
@@ -24,12 +24,11 @@ return {
     },
   },
   {
-    'nvim-telescope/telescope.nvim', version = '0.1.0',
-    -- or                            , branch = '0.1.x',
-    dependencies = { { 'nvim-lua/plenary.nvim' } }
+    "nvim-telescope/telescope.nvim", version = "0.1.0",
+    dependencies = { { "nvim-lua/plenary.nvim" } }
   },
   {
-    'nvim-telescope/telescope-file-browser.nvim',
+    "nvim-telescope/telescope-file-browser.nvim",
     config = function()
       require("telescope").load_extension "file_browser"
     end
@@ -57,7 +56,7 @@ return {
     branch = "v2.x",
     dependencies = {
       "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "nvim-tree/nvim-web-devicons",
       "MunifTanjim/nui.nvim",
     }
   },
@@ -95,7 +94,6 @@ return {
       cursor_behavior = 'hold',
       -- Notify about possible problems or not
       notify = true,
-      -- langs = langs,
     }
   },
   {
@@ -143,9 +141,7 @@ return {
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     config = function()
-      require("nvim-surround").setup({
-        -- Configuration here, or leave empty to use defaults
-      })
+      require("nvim-surround").setup({})
     end
   },
   {
