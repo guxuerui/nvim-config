@@ -32,7 +32,7 @@
 │     ├── lsp.lua
 │     ├── lspsaga.lua
 │     ├── lualine.lua
-│     ├── mini-indent.lua
+│     ├── mini.lua
 │     ├── neodim.lua
 │     ├── noice.lua
 │     ├── null-ls.lua
