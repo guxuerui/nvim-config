@@ -6,7 +6,7 @@ return {
     local diagnostics = null_ls.builtins.diagnostics
     local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
-    local format = function(payload)
+    local format = function()
       vim.lsp.buf.format({
         async = false,
       })
