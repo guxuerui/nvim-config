@@ -23,7 +23,8 @@
 │  │  ├── base.lua
 │  │  ├── keymaps.lua
 │  │  ├── lazy.lua
-│  │  └── options.lua
+│  │  ├── options.lua
+│  │  └── utils.lua
 │  └── plugins
 │     ├── alpha.lua
 │     ├── cinnamon.lua
