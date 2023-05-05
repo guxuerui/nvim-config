@@ -4,11 +4,8 @@ return {
     dependencies = { { 'nvim-lualine/lualine.nvim' }, { 'nvim-tree/nvim-web-devicons' } },
     config = function()
       require('tabline').setup {
-        -- Defaults configuration options
         enable = true,
         options = {
-          -- If lualine is installed tabline will use separators configured in lualine by default.
-          -- These options can be used to override those settings.
           section_separators = { '', '' },
           component_separators = { '', '' },
           max_bufferline_percent = 99, -- set to nil by default, and it uses vim.o.columns * 2/3
@@ -24,4 +21,3 @@ return {
     end
   },
 }
-
