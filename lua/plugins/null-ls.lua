@@ -3,7 +3,7 @@ return {
   config = function()
     local null_ls = require("null-ls")
     local formatting = null_ls.builtins.formatting
-    local diagnostics = null_ls.builtins.diagnostics
+    -- local diagnostics = null_ls.builtins.diagnostics
     local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
     local format = function()
@@ -17,7 +17,7 @@ return {
       sources = {
         formatting.markdownlint, -- need install: npm install -g markdownlint-cli
         formatting.eslint_d,
-        diagnostics.eslint_d,
+        -- diagnostics.eslint_d,
       },
       -- you can reuse a shared lspconfig on_attach callback here
       on_attach = function(client, bufnr)
