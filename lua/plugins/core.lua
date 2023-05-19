@@ -138,7 +138,7 @@ return {
   },
   {
     "kylechui/nvim-surround",
-    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    version = "*",
     event = "VeryLazy",
     config = function()
       require("nvim-surround").setup({})
@@ -147,7 +147,7 @@ return {
   {
     "chrishrb/gx.nvim",
     event = { "BufEnter" },
-    config = true, -- default settings
+    config = true,
   },
   {
     "chikko80/error-lens.nvim",
