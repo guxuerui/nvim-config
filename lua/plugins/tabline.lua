@@ -1,7 +1,7 @@
 return {
   {
     'kdheepak/tabline.nvim',
-    dependencies = { { 'nvim-lualine/lualine.nvim' }, { 'nvim-tree/nvim-web-devicons' } },
+    dependencies = { { 'nvim-tree/nvim-web-devicons' } },
     config = function()
       require('tabline').setup {
         enable = true,
