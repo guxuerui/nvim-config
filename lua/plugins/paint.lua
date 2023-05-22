@@ -4,14 +4,23 @@ return {
   config = function()
     local hlmap = {
       ["^#%s+(.-)%s*$"] = "Operator",
-      ["^##%s+(.-)%s*$"] = "Type",
+      ["^##%s+(.-)%s*$"] = "Conditional",
       ["^###%s+(.-)%s*$"] = "String",
-      ["^####%s+(.-)%s*$"] = "Constant",
-      ["^#####%s+(.-)%s*$"] = "Number",
-      ["^######%s+(.-)%s*$"] = "Error",
+      ["^####%s+(.-)%s*$"] = "Number",
+      ["^#####%s+(.-)%s*$"] = "Include",
+      ["^######%s+(.-)%s*$"] = "Structure",
     }
 
-    local highlights = {}
+    local highlights = {
+      {
+        -- filter can be a table of buffer options that should match,
+        -- or a function called with buf as param that should return true.
+        -- The example below will paint @something in comments with Constant
+        filter = { filetype = "lua" },
+        pattern = "%s*%-%-%-%s*(@%w+)",
+        hl = "Constant",
+      },
+    }
     for pattern, hl in pairs(hlmap) do
       table.insert(highlights, {
         filter = { filetype = "markdown" },
