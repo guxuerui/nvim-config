@@ -108,14 +108,33 @@ return {
     }
   },
   -- auto-session
-  "rmagatti/auto-session",
+  {
+    'rmagatti/auto-session',
+    config = function()
+      require("auto-session").setup {
+        log_level = "error",
+        auto_session_enable_last_session = true,
+        auto_session_suppress_dirs = { "~/.config/nvim/sessions" },
+        bypass_session_save_file_types = nil,
+        cwd_change_handling = {
+          restore_upcoming_session = true,
+          pre_cwd_changed_hook = nil,
+          post_cwd_changed_hook = nil,
+        },
+      }
+    end
+  },
   {
     'rmagatti/session-lens',
-    opts = {
-      theme_conf = { border = true },
-      previewer = true,
-      prompt_title = 'YEAH SESSIONS',
-    }
+    config = function()
+      require("telescope").load_extension("session-lens")
+      require('session-lens').setup({
+        theme = 'ivy', -- default is dropdown
+        previewer = true,
+        theme_conf = { border = true },
+        prompt_title = 'YEAH SESSIONS',
+      })
+    end
   },
   "lukas-reineke/indent-blankline.nvim",
   {
