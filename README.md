@@ -37,6 +37,7 @@
 │     ├── neodim.lua
 │     ├── noice.lua
 │     ├── null-ls.lua
+│     ├── paint.lua
 │     ├── print.lua
 │     ├── searchbox.lua
 │     ├── tabline.lua
