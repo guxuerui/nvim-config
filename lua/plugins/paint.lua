@@ -20,7 +20,28 @@ return {
         pattern = "%s*%-%-%-%s*(@%w+)",
         hl = "Constant",
       },
+      {
+        filter = { filetype = "javascript" },
+        pattern = "%s*%/%/%s*(@%w+)",
+        hl = "Constant",
+      },
+      {
+        filter = { filetype = "typescript" },
+        pattern = "%s*%/%/%s*(@%w+)",
+        hl = "Constant",
+      },
+      {
+        filter = { filetype = "vue" },
+        pattern = "%s*%/%/%s*(@%w+)",
+        hl = "Constant",
+      },
+      {
+        filter = { filetype = "svelte" },
+        pattern = "%s*%/%/%s*(@%w+)",
+        hl = "Constant",
+      },
     }
+
     for pattern, hl in pairs(hlmap) do
       table.insert(highlights, {
         filter = { filetype = "markdown" },
