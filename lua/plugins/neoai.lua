@@ -22,7 +22,6 @@ return {
   },
   config = function()
     require("neoai").setup({
-      -- Options go here
       ui = {
         output_popup_text = "NeoAI",
         input_popup_text = "Prompt",
