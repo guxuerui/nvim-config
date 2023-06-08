@@ -114,9 +114,9 @@ mapkey("n", ";b", "<cmd>%bd|e#|bd#<cr>")
 -- :Autosession delete
 maplua(";fs", "require('session-lens').search_session()")
 mapcmd("<LEADER>fs", ":SearchSession")
-mapcmd("<LEADER>ss", ":SaveSession")
-mapcmd("<LEADER>sr", ":RestoreSession")
-mapcmd("<LEADER>ds", ":DeleteSession")
+mapcmd("<LEADER>ss", ":SessionSave")
+mapcmd("<LEADER>sr", ":SessionRestore")
+mapcmd("<LEADER>ds", ":SessionDelete")
 mapcmd("<LEADER>A", ":Alpha")
 
 -- markdown-preview
