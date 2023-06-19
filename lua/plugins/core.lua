@@ -25,23 +25,15 @@ return {
   },
   {
     "nvim-telescope/telescope.nvim", version = "0.1.0",
-    dependencies = { { "nvim-lua/plenary.nvim" } }
+    dependencies = {
+      { "nvim-lua/plenary.nvim" }
+    }
   },
   {
     "nvim-telescope/telescope-file-browser.nvim",
     config = function()
       require("telescope").load_extension "file_browser"
     end
-  },
-  {
-    "lewis6991/gitsigns.nvim",
-    event = "BufReadPre",
-    config = function()
-      require("gitsigns").setup({
-        signcolumn = true,
-        current_line_blame = true,
-      })
-    end,
   },
   {
     "norcalli/nvim-colorizer.lua",
