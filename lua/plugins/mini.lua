@@ -17,6 +17,8 @@ return {
       }
       require('mini.cursorword').setup()
       require('mini.bracketed').setup()
+      require('mini.jump').setup()
+      require('mini.animate').setup()
     end
   }
 }
