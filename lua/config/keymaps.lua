@@ -156,3 +156,6 @@ keymap("v", "<LEADER>/", "<esc><cmd>lua require('Comment.api').toggle_linewise_o
 mapcmd("tg", ":TSJToggle")
 mapcmd("tj", ":TSJJoin")
 mapcmd("ts", ":TSJSplit")
+
+--- @mini.nvim
+maplua(";tt", "require('mini.files').open()")
