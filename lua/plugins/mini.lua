@@ -19,6 +19,26 @@ return {
       require('mini.bracketed').setup()
       require('mini.jump').setup()
       require('mini.animate').setup()
+      require('mini.files').setup(
+        {
+          -- General options
+          options = {
+            -- Whether to use for editing directories
+            use_as_default_explorer = true,
+          },
+
+          -- Customization of explorer windows
+          windows = {
+            -- Maximum number of windows to show side by side
+            max_number = math.huge,
+            -- Whether to show preview of directory under cursor
+            preview = true,
+            -- Width of focused window
+            width_focus = 50,
+            -- Width of non-focused window
+            width_nofocus = 25,
+          },
+        })
     end
   }
 }
