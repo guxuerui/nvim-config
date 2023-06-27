@@ -21,13 +21,9 @@ return {
       require('mini.animate').setup()
       require('mini.files').setup(
         {
-          -- General options
           options = {
-            -- Whether to use for editing directories
             use_as_default_explorer = true,
           },
-
-          -- Customization of explorer windows
           windows = {
             -- Maximum number of windows to show side by side
             max_number = math.huge,
