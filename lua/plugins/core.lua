@@ -99,7 +99,6 @@ return {
       },
     }
   },
-  -- auto-session
   {
     'rmagatti/auto-session',
     config = function()
