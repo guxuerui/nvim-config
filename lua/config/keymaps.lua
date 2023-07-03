@@ -159,3 +159,7 @@ mapcmd("ts", ":TSJSplit")
 
 --- @mini.nvim
 maplua(";tt", "require('mini.files').open()")
+
+--- @error-lens.nvim
+mapcmd("<LEADER>er", ":ErrorLensToggle")
+mapcmd("<LEADER>et", ":ErrorLensTelescope")
