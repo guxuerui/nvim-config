@@ -1,16 +1,8 @@
 return {
   {
-    "chikko80/error-lens.nvim",
-    event = "BufRead",
-    opts = {
-      enabled = true,
-      auto_adjust = {
-        enable = true,
-        theme_bg = '#222436',
-        step = 5,
-        total = 30,
-      },
-      prefix = 4,
-    }
+    "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+    config = function()
+      require("lsp_lines").setup()
+    end,
   }
 }
