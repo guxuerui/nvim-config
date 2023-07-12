@@ -30,10 +30,14 @@
 │     ├── cinnamon.lua
 │     ├── colorscheme.lua
 │     ├── core.lua
+│     ├── gitsigns.lua
+│     ├── leet-buddy.lua
 │     ├── lsp.lua
+│     ├── lsp_lines.lua
 │     ├── lspsaga.lua
 │     ├── lualine.lua
 │     ├── mini.lua
+│     ├── neoai.lua
 │     ├── neodim.lua
 │     ├── noice.lua
 │     ├── null-ls.lua
@@ -46,7 +50,9 @@
 └── README.md
 ```
 
-## 1. [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim)
+## :anchor: TIPS
+
+### 1. [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim)
 
 > **Install lsp-related plugins into lsp-zero.nvim integration**
 
@@ -84,7 +90,7 @@ return {
 }
 ```
 
-## 2. Use markdownlint for markdown file with null-ls.nvim
+### 2. Use markdownlint for markdown file with null-ls.nvim
 
 * First Step
 
