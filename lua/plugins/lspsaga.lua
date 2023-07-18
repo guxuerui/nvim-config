@@ -4,13 +4,11 @@ local keymap = vim.keymap.set
 -- If there is no definition, it will instead be hidden
 -- When you use an action in finder like "open vsplit",
 -- you can use <C-t> to jump back
-keymap("n", "gpr", "<cmd>Lspsaga lsp_finder<CR>")
-
 -- Code action
 keymap({ "n", "v" }, "<leader>la", "<cmd>Lspsaga code_action<CR>")
 
 -- Rename all occurrences of the hovered word for the entire file
-keymap("n", "<leader>lr", "<cmd>Lspsaga rename<CR>")
+keymap("n", "grn", "<cmd>Lspsaga rename<CR>")
 
 -- Rename all occurrences of the hovered word for the selected files
 keymap("n", "gr", "<cmd>Lspsaga rename ++project<CR>")
@@ -20,27 +18,23 @@ keymap("n", "gr", "<cmd>Lspsaga rename ++project<CR>")
 -- It also supports open/vsplit/etc operations, do refer to "definition_action_keys"
 -- It also supports tagstack
 -- Use <C-t> to jump back
+keymap("n", "gpr", "<cmd>Lspsaga finder<CR>")
+
+keymap("n", "gpi", "<cmd>Lspsaga finder imp<CR>")
+
 keymap("n", "gpd", "<cmd>Lspsaga peek_definition<CR>")
+
+keymap("n", "gpt", "<cmd>Lspsaga peek_type_definition<CR>")
 
 -- Go to definition
 keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>")
 
--- Show line diagnostics
--- You can pass argument ++unfocus to
--- unfocus the show_line_diagnostics floating window
-keymap("n", "<leader>lsd", "<cmd>Lspsaga show_line_diagnostics<CR>")
-
--- Show cursor diagnostics
--- Like show_line_diagnostics, it supports passing the ++unfocus argument
-keymap("n", "<leader>lcd", "<cmd>Lspsaga show_cursor_diagnostics<CR>")
-
--- Show buffer diagnostics
-keymap("n", "<leader>lfd", "<cmd>Lspsaga show_buf_diagnostics<CR>")
+keymap("n", "gdt", "<cmd>Lspsaga goto_type_definition<CR>")
 
 -- Diagnostic jump
 -- You can use <C-o> to jump back to your previous location
-keymap("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
-keymap("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>")
+keymap('n', '[e', '<cmd>Lspsaga diagnostic_jump_next<CR>')
+keymap('n', ']e', '<cmd>Lspsaga diagnostic_jump_prev<CR>')
 
 -- Diagnostic jump with filters such as only jumping to an error
 keymap("n", "[E", function()
@@ -75,13 +69,49 @@ keymap("n", "<Leader>co", "<cmd>Lspsaga outgoing_calls<CR>")
 -- Floating terminal
 keymap({ "n", "t" }, "<leader>tr", "<cmd>Lspsaga term_toggle<CR>")
 
+local function lsp_fts(type)
+  type = type or nil
+  local fts = {}
+  fts.backend = {
+    'lua',
+    'sh',
+    'zig',
+    'python',
+  }
+
+  fts.frontend = {
+    'javascript',
+    'javascriptreact',
+    'typescript',
+    'typescriptreact',
+    'json',
+    'html',
+    'css',
+    'vue',
+    'svelte',
+    'markdown',
+    'react'
+  }
+  if not type then
+    return vim.list_extend(fts.backend, fts.frontend)
+  end
+  return fts[type]
+end
+
 return {
   {
-    "glepnir/lspsaga.nvim",
+    "nvimdev/lspsaga.nvim",
     event = "LspAttach",
+    ft = lsp_fts(),
     config = function()
-      require("lspsaga").setup({})
+      require("lspsaga").setup({
+        symbol_in_winbar = {
+          hide_keyword = true,
+        }
+      })
     end,
-    dependencies = { { "nvim-tree/nvim-web-devicons" } }
+    dependencies = {
+      { "nvim-tree/nvim-web-devicons", },
+    }
   }
 }
