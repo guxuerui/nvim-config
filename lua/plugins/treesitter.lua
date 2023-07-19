@@ -24,6 +24,8 @@ return {
           "astro",
           "markdown",
           "markdown_inline",
+          "bash",
+          "fish",
         }, -- one of "all",
         sync_install = true,
         ignore_install = { "php", "phpdoc" },
