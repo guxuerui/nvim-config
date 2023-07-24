@@ -51,7 +51,9 @@ return {
               .. context
         end,
       },
-      open_api_key_env = "OPENAI_KEY",
+      api_key = {
+        env = "OPENAI_API_KEY"
+      },
       shortcuts = {
         {
           name = "textify",
