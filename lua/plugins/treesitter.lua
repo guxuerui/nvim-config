@@ -7,6 +7,7 @@ return {
       local ft_to_parser = require("nvim-treesitter.parsers").filetype_to_parsername
       ft_to_parser.mdx = "markdown"
       require("nvim-treesitter.configs").setup({
+        -- one of "all"
         ensure_installed = {
           "javascript",
           "css",
@@ -26,7 +27,7 @@ return {
           "markdown_inline",
           "bash",
           "fish",
-        }, -- one of "all",
+        },
         sync_install = true,
         ignore_install = { "php", "phpdoc" },
         highlight = {
