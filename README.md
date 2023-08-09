@@ -90,7 +90,28 @@ return {
 }
 ```
 
-### 2. Use markdownlint for markdown file with null-ls.nvim
+### 2. Language Servers with [Mason.nvim](https://github.com/williamboman/mason.nvim)
+
+> **Install lsp-related language server into Mason.nvim integration**
+
+* bash-language-server
+* css-lsp
+* html-lsp
+* json-lsp
+* eslint-lsp
+* lua-language-server
+* dockerfile-language-server
+* emmet-ls
+* marksman
+* prisma-language-server
+* pyright
+* rust-analyzer
+* svelte-language-server
+* tailwindcss-language-server
+* typescript-language-server
+* vue-language-server
+
+### 3. Use markdownlint for markdown file with null-ls.nvim
 
 * First Step
 
