@@ -27,6 +27,7 @@ return {
           "markdown_inline",
           "bash",
           "fish",
+          "prisma",
         },
         sync_install = true,
         ignore_install = { "php", "phpdoc" },
