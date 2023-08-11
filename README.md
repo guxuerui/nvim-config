@@ -43,6 +43,7 @@
 │     ├── null-ls.lua
 │     ├── paint.lua
 │     ├── print.lua
+│     ├── ranger.lua
 │     ├── searchbox.lua
 │     ├── tabline.lua
 │     ├── treesitter.lua
