@@ -7,15 +7,15 @@ keymap("", "<Space>", "<Nop>", opts)
 keymap("", ";", ":", opts)
 
 local function mapkey(mode, lhs, rhs)
-  vim.api.nvim_set_keymap(mode, lhs, rhs, { noremap = true })
+	vim.api.nvim_set_keymap(mode, lhs, rhs, { noremap = true })
 end
 
 local function mapcmd(key, cmd)
-  vim.api.nvim_set_keymap('n', key, ':' .. cmd .. '<cr>', { noremap = true })
+	vim.api.nvim_set_keymap("n", key, ":" .. cmd .. "<cr>", { noremap = true })
 end
 
 local function maplua(key, txt)
-  vim.api.nvim_set_keymap('n', key, ':lua ' .. txt .. '<cr>', { noremap = true })
+	vim.api.nvim_set_keymap("n", key, ":lua " .. txt .. "<cr>", { noremap = true })
 end
 
 --Remap space as leader key
@@ -25,16 +25,16 @@ mapcmd("R", "<Nop>")
 mapcmd("<LEADER><CR>", "noh")
 
 -- move.nvim
-keymap('n', '<C-j>', ':MoveLine(1)<CR>', opts)
-keymap('n', '<C-k>', ':MoveLine(-1)<CR>', opts)
-keymap('n', '<C-h>', ':MoveHChar(-1)<CR>', opts)
-keymap('n', '<C-l>', ':MoveHChar(1)<CR>', opts)
+keymap("n", "<C-j>", ":MoveLine(1)<CR>", opts)
+keymap("n", "<C-k>", ":MoveLine(-1)<CR>", opts)
+keymap("n", "<C-h>", ":MoveHChar(-1)<CR>", opts)
+keymap("n", "<C-l>", ":MoveHChar(1)<CR>", opts)
 
 -- move.nvim's  visual-mode commands
-keymap('v', '<C-j>', ':MoveBlock(1)<CR>', opts)
-keymap('v', '<C-k>', ':MoveBlock(-1)<CR>', opts)
-keymap('v', '<C-h>', ':MoveHBlock(-1)<CR>', opts)
-keymap('v', '<C-l>', ':MoveHBlock(1)<CR>', opts)
+keymap("v", "<C-j>", ":MoveBlock(1)<CR>", opts)
+keymap("v", "<C-k>", ":MoveBlock(-1)<CR>", opts)
+keymap("v", "<C-h>", ":MoveHBlock(-1)<CR>", opts)
+keymap("v", "<C-l>", ":MoveHBlock(1)<CR>", opts)
 
 -- Modes
 --   normal_mode = "n",
@@ -44,16 +44,19 @@ keymap('v', '<C-l>', ':MoveHBlock(1)<CR>', opts)
 --   term_mode = "t",
 --   command_mode = "c",
 
-keymap("n", "S",
-  ":w<CR> :lua vim.notify('Save Complete', 'info', { title = 'User Operation', timeout = 1000, stages = 'fade_in_slide_out'})<CR>"
-  , opts)
+keymap(
+	"n",
+	"S",
+	":w<CR> :lua vim.notify('Save Complete', 'info', { title = 'User Operation', timeout = 1000, stages = 'fade_in_slide_out'})<CR>",
+	opts
+)
 keymap("n", "Q", ":q!<CR>", opts)
 keymap("", "R", ":source $MYVIMRC<CR>", opts)
 keymap("", "cd", ":chdir", opts)
 
 -- Start: These are Neovim's build-in defaults commands (see :help nvim_buf_set_keymap)
 mapkey("n", "dw", 'vb"_d')
-mapkey("n", '<C-a>', 'gg<S-v>G')
+mapkey("n", "<C-a>", "gg<S-v>G")
 
 -- Visual --
 -- Stay in indent mode
@@ -131,7 +134,6 @@ mapcmd("sl", "set splitright<CR>:vsplit<CR>")
 mapcmd("sh", "set nosplitright<CR>:vsplit<CR>")
 mapcmd("sk", "set splitbelow<CR>:split<CR>")
 mapcmd("sj", "set splitbelow<CR>:split<CR>")
-
 
 -- change split size using alt+arrow
 mapcmd("<M-left>", "vertical resize -5<cr>")
