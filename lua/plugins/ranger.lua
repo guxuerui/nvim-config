@@ -7,8 +7,10 @@ return {
 				replace_netrw = true,
 				ui = {
 					border = "rounded",
-					width = 0.6,
-					height = 0.6,
+					height = 0.8,
+					width = 0.8,
+					x = 0.5,
+					y = 0.5,
 				},
 			})
 			vim.api.nvim_set_keymap("n", "<leader>er", "", {
