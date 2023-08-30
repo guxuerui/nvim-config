@@ -93,6 +93,7 @@ return {
 					gui = "bold",
 				},
 			}
+			local wtf = require("wtf")
 			require("lualine").setup({
 				options = {
 					icons_enabled = true,
@@ -118,7 +119,7 @@ return {
 					},
 					lualine_b = { "branch", "diff", "diagnostics" },
 					-- show the current filename and session name,
-					lualine_c = { "filename", require("auto-session.lib").current_session_name },
+					lualine_c = { "filename", require("auto-session.lib").current_session_name, wtf.get_status },
 					lualine_x = {
 						attached_clients,
 						"encoding",
