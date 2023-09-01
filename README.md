@@ -118,6 +118,7 @@ return {
 
 ```bash
 npm install -g markdownlint-cli
+npm install -g eslint_d
 ```
 
 * Second Step
