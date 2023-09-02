@@ -107,6 +107,7 @@ return {
 * prisma-language-server
 * pyright
 * rust-analyzer
+* stylua
 * svelte-language-server
 * tailwindcss-language-server
 * typescript-language-server
