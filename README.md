@@ -1,6 +1,6 @@
 # These are my Neovim configuration files
 
-> Ensure you have installed [Neovim](https://neovim.io/), and the version I am currently using is `0.9.0`
+> Ensure you have installed [Neovim](https://neovim.io/), and the version I am currently using is `0.9.1`
 
 ## Requirements
 
