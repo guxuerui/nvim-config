@@ -141,6 +141,7 @@ mapcmd("<M-down>", "resize +5<cr>")
 mapcmd("<M-up>", "resize -5<cr>")
 mapcmd("<M-right>", "vertical resize +5<cr>")
 
+--- @tabline.nvim -> toggle tab
 mapcmd("th", ":TablineBufferPrevious")
 mapcmd("tl", ":TablineBufferNext")
 
