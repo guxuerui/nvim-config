@@ -15,7 +15,7 @@ return {
 		null_ls.setup({
 			debug = false,
 			sources = {
-				formatting.markdownlint, -- need install: npm install -g markdownlint-cli
+				formatting.markdownlint,
 				formatting.stylua,
 				formatting.eslint_d,
 				-- diagnostics.eslint_d,
