@@ -30,6 +30,7 @@
 │     ├── cinnamon.lua
 │     ├── colorscheme.lua
 │     ├── core.lua
+│     ├── diffView.lua
 │     ├── gitsigns.lua
 │     ├── leet-buddy.lua
 │     ├── lsp.lua
