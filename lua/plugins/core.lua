@@ -101,34 +101,34 @@ return {
 			},
 		},
 	},
-	{
-		"rmagatti/auto-session",
-		config = function()
-			require("auto-session").setup({
-				log_level = "error",
-				auto_session_enable_last_session = true,
-				auto_session_suppress_dirs = { "~/.config/nvim/sessions" },
-				bypass_session_save_file_types = nil,
-				cwd_change_handling = {
-					restore_upcoming_session = true,
-					pre_cwd_changed_hook = nil,
-					post_cwd_changed_hook = nil,
-				},
-			})
-		end,
-	},
-	{
-		"rmagatti/session-lens",
-		config = function()
-			require("telescope").load_extension("session-lens")
-			require("session-lens").setup({
-				theme = "ivy", -- default is dropdown
-				previewer = true,
-				theme_conf = { border = true },
-				prompt_title = "YEAH SESSIONS",
-			})
-		end,
-	},
+	-- {
+	-- 	"rmagatti/auto-session",
+	-- 	config = function()
+	-- 		require("auto-session").setup({
+	-- 			log_level = "error",
+	-- 			auto_session_enable_last_session = true,
+	-- 			auto_session_suppress_dirs = { "~/.config/nvim/sessions" },
+	-- 			bypass_session_save_file_types = nil,
+	-- 			cwd_change_handling = {
+	-- 				restore_upcoming_session = true,
+	-- 				pre_cwd_changed_hook = nil,
+	-- 				post_cwd_changed_hook = nil,
+	-- 			},
+	-- 		})
+	-- 	end,
+	-- },
+	-- {
+	-- 	"rmagatti/session-lens",
+	-- 	config = function()
+	-- 		require("telescope").load_extension("session-lens")
+	-- 		require("session-lens").setup({
+	-- 			theme = "ivy", -- default is dropdown
+	-- 			previewer = true,
+	-- 			theme_conf = { border = true },
+	-- 			prompt_title = "YEAH SESSIONS",
+	-- 		})
+	-- 	end,
+	-- },
 	"lukas-reineke/indent-blankline.nvim",
 	{
 		"shortcuts/no-neck-pain.nvim",
@@ -168,5 +168,13 @@ return {
 		"chrishrb/gx.nvim",
 		event = { "BufEnter" },
 		config = true,
+	},
+	{
+		"razak17/tailwind-fold.nvim",
+		opts = {
+			min_chars = 2,
+		},
+		dependencies = { "nvim-treesitter/nvim-treesitter" },
+		ft = { "html", "svelte", "astro", "vue", "typescriptreact" },
 	},
 }
