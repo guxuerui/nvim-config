@@ -118,8 +118,8 @@ return {
 						"mode",
 					},
 					lualine_b = { "branch", "diff", "diagnostics" },
-					-- show the current filename and session name,
-					lualine_c = { "filename", require("auto-session.lib").current_session_name, wtf.get_status },
+					-- show the current filename
+					lualine_c = { "filename", wtf.get_status },
 					lualine_x = {
 						attached_clients,
 						"encoding",
