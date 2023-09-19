@@ -33,15 +33,15 @@ keymap("n", "gdt", "<cmd>Lspsaga goto_type_definition<CR>")
 
 -- Diagnostic jump
 -- You can use <C-o> to jump back to your previous location
-keymap('n', '[e', '<cmd>Lspsaga diagnostic_jump_next<CR>')
-keymap('n', ']e', '<cmd>Lspsaga diagnostic_jump_prev<CR>')
+keymap("n", "[e", "<cmd>Lspsaga diagnostic_jump_next<CR>")
+keymap("n", "]e", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
 
 -- Diagnostic jump with filters such as only jumping to an error
 keymap("n", "[E", function()
-  require("lspsaga.diagnostic"):goto_prev({ severity = vim.diagnostic.severity.ERROR })
+	require("lspsaga.diagnostic"):goto_prev({ severity = vim.diagnostic.severity.ERROR })
 end)
 keymap("n", "]E", function()
-  require("lspsaga.diagnostic"):goto_next({ severity = vim.diagnostic.severity.ERROR })
+	require("lspsaga.diagnostic"):goto_next({ severity = vim.diagnostic.severity.ERROR })
 end)
 
 -- Toggle outline
@@ -70,41 +70,45 @@ keymap("n", "<Leader>co", "<cmd>Lspsaga outgoing_calls<CR>")
 keymap({ "n", "t" }, "<leader>tr", "<cmd>Lspsaga term_toggle<CR>")
 
 local function lsp_fts(type)
-  type = type or nil
-  local fts = {}
-  fts.backend = {
-    'lua',
-    'sh',
-    'zig',
-    'python',
-  }
+	type = type or nil
+	local fts = {}
+	fts.backend = {
+		"lua",
+		"sh",
+		"zig",
+		"python",
+	}
 
-  fts.frontend = {
-    'javascript',
-    'javascriptreact',
-    'typescript',
-    'typescriptreact',
-    'json',
-    'html',
-    'css',
-    'vue',
-    'svelte',
-    'markdown',
-    'react'
-  }
-  if not type then
-    return vim.list_extend(fts.backend, fts.frontend)
-  end
-  return fts[type]
+	fts.frontend = {
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"json",
+		"html",
+		"css",
+		"vue",
+		"svelte",
+		"markdown",
+		"react",
+	}
+	if not type then
+		return vim.list_extend(fts.backend, fts.frontend)
+	end
+	return fts[type]
 end
 
 return {
-  {
-    "nvimdev/lspsaga.nvim",
-    event = "LspAttach",
-    ft = lsp_fts(),
-    config = function()
-      require("lspsaga").setup({})
-    end
-  }
+	{
+		"nvimdev/lspsaga.nvim",
+		event = "LspAttach",
+		ft = lsp_fts(),
+		config = function()
+			require("lspsaga").setup({
+				vim.diagnostic.config({
+					virtual_text = false,
+				}),
+			})
+		end,
+	},
 }
