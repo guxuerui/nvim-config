@@ -104,11 +104,7 @@ return {
 		event = "LspAttach",
 		ft = lsp_fts(),
 		config = function()
-			require("lspsaga").setup({
-				vim.diagnostic.config({
-					virtual_text = false,
-				}),
-			})
+			require("lspsaga").setup({})
 		end,
 	},
 }
