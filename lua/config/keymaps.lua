@@ -94,7 +94,11 @@ mapkey("n", "-", "<C-x>")
 
 -- telescope
 mapkey("n", ";fe", "<cmd>Telescope file_browser<cr>")
-mapkey("n", ";ff", "<cmd>Telescope find_files<CR>")
+mapkey(
+	"n",
+	";ff",
+	"<cmd>lua require'telescope.builtin'.find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})<CR>"
+)
 mapkey("n", ";fg", "<cmd>Telescope live_grep<cr>")
 mapkey("n", ";fb", "<cmd>Telescope buffers<cr>")
 mapkey("n", ";fh", "<cmd>Telescope help_tags<cr>")
