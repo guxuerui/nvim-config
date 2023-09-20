@@ -52,7 +52,7 @@ return {
 					":lua require'telescope.builtin'.find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }}) <CR>"
 				),
 				dashboard.button("g", "󰷾 " .. " Find text", ":Telescope live_grep <CR>"),
-				dashboard.button("b", " " .. " File browser", ":Telescope file_browser <CR>"),
+				dashboard.button("s", " " .. " Restore session", ":lua require('persistence').load()<CR>"),
 				dashboard.button("c", " " .. " Config", ":e $MYVIMRC <CR>"),
 				dashboard.button("m", "勒" .. " Key mappings", ":e ~/.config/nvim/lua/config/keymaps.lua <CR>"),
 				dashboard.button("l", "󰒲 " .. " Lazy", ":Lazy<CR>"),
