@@ -1,6 +1,5 @@
 {
   "Comment.nvim": { "branch": "master", "commit": "7c49fb2ac01a9f03410100c8e78f647bbea857e8" },
-  "LeetBuddy.nvim": { "branch": "main", "commit": "98d8e5de3847302d7a81a711ac93dbdeff145b2d" },
   "LuaSnip": { "branch": "master", "commit": "99a94cc35ec99bf06263d0346128e908a204575c" },
   "alpha-nvim": { "branch": "main", "commit": "e4fc5e29b731bdf55d204c5c6a11dc3be70f3b65" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
