@@ -32,7 +32,6 @@
 │     ├── core.lua
 │     ├── diffView.lua
 │     ├── gitsigns.lua
-│     ├── leet-buddy.lua
 │     ├── lsp.lua
 │     ├── lsp_lines.lua
 │     ├── lspsaga.lua
@@ -43,6 +42,7 @@
 │     ├── noice.lua
 │     ├── null-ls.lua
 │     ├── paint.lua
+│     ├── persistence.lua
 │     ├── print.lua
 │     ├── ranger.lua
 │     ├── searchbox.lua
