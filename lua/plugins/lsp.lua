@@ -2,7 +2,6 @@ return {
 	{
 		"VonHeikemen/lsp-zero.nvim",
 		dependencies = {
-			-- "lukas-reineke/lsp-format.nvim",
 			-- LSP Support
 			"neovim/nvim-lspconfig",
 			"williamboman/mason.nvim",
@@ -20,10 +19,12 @@ return {
 		},
 		config = function()
 			local lsp = require("lsp-zero")
+			lsp.on_attach(function(client, bufnr)
+				if client.name == "tailwindcss" then
+					require("tailwindcss-colors").buf_attach(bufnr)
+				end
+			end)
 			lsp.preset("recommended")
-			-- lsp.on_attach(function(client, bufnr)
-			--   require("lsp-format").on_attach(client, bufnr)
-			-- end)
 			lsp.nvim_workspace()
 			lsp.setup()
 		end,
