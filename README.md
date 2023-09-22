@@ -81,6 +81,11 @@ return {
     },
     config = function()
       local lsp = require("lsp-zero")
+      lsp.on_attach(function(client, bufnr)
+        if client.name == "tailwindcss" then
+          require("tailwindcss-colors").buf_attach(bufnr)
+        end
+      end)
       lsp.preset("recommended")
       lsp.nvim_workspace()
       lsp.setup()
