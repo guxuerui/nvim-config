@@ -152,7 +152,6 @@ mapcmd("tl", ":TablineBufferNext")
 -- SarchBox Key Bindings
 mapcmd("<LEADER>s", "SearchBoxIncSearch")
 mapcmd("<LEADER>r", "SearchBoxReplace confirm=menu")
-mapcmd("<LEADER>lg", "LazyGit")
 
 -- Comment
 maplua("<LEADER>/", 'require("Comment.api").toggle_current_linewise()')
