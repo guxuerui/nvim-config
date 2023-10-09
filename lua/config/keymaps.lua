@@ -158,7 +158,6 @@ maplua("<LEADER>/", 'require("Comment.api").toggle_current_linewise()')
 keymap("v", "<LEADER>/", "<esc><cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<cr>", opts)
 
 -- treesj nvim
--- :TSJToggle :TSJJoin :TSJSplit
 mapcmd("tg", ":TSJToggle")
 mapcmd("tj", ":TSJJoin")
 mapcmd("ts", ":TSJSplit")
