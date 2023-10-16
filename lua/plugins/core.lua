@@ -166,14 +166,6 @@ return {
 		config = true,
 	},
 	{
-		"razak17/tailwind-fold.nvim",
-		opts = {
-			min_chars = 2,
-		},
-		dependencies = { "nvim-treesitter/nvim-treesitter" },
-		ft = { "html", "svelte", "astro", "vue", "typescriptreact" },
-	},
-	{
 		"themaxmarchuk/tailwindcss-colors.nvim",
 		config = function()
 			require("tailwindcss-colors").setup()
