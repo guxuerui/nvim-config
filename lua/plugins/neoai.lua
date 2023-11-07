@@ -31,7 +31,7 @@ return {
 			models = {
 				{
 					name = "openai",
-					model = "gpt-3.5-turbo",
+					model = "gpt-3.5-turbo-1106",
 				},
 			},
 			register_output = {
