@@ -28,6 +28,7 @@ return {
 					"bash",
 					"fish",
 					"prisma",
+					"regex",
 				},
 				sync_install = true,
 				ignore_install = { "php", "phpdoc" },
