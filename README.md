@@ -1,6 +1,6 @@
 # These are my Neovim configuration files
 
-> Ensure you have installed [Neovim](https://neovim.io/), and the version I am currently using is `0.9.1`
+> Ensure you have installed [Neovim](https://neovim.io/), and the version I am currently using is `0.10.0`
 
 ## Requirements
 
@@ -32,6 +32,7 @@
 │     ├── core.lua
 │     ├── diffView.lua
 │     ├── gitsigns.lua
+│     ├── gx.lua
 │     ├── lsp.lua
 │     ├── lsp_lines.lua
 │     ├── lspsaga.lua
@@ -122,7 +123,6 @@ return {
 
 ```bash
 npm install -g markdownlint-cli
-npm install -g eslint_d
 ```
 
 * Second Step
@@ -133,7 +133,6 @@ local formatting = null_ls.builtins.formatting
 null_ls.setup({
   sources = {
     formatting.markdownlint,
-    formatting.eslint_d,
   }
 })
 ```
