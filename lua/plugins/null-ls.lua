@@ -8,7 +8,6 @@ return {
 	config = function()
 		local null_ls = require("null-ls")
 		local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-
 		local lsp_formatting = function(bufnr)
 			vim.lsp.buf.format({
 				filter = function(client)
@@ -24,6 +23,7 @@ return {
 				null_ls.builtins.formatting.stylua,
 				null_ls.builtins.completion.spell,
 				null_ls.builtins.formatting.shfmt,
+				null_ls.builtins.formatting.markdownlint,
 				-- require("none-ls.diagnostics.eslint_d"),
 				require("none-ls.formatting.eslint_d"),
 				require("none-ls.code_actions.eslint_d"),
