@@ -26,7 +26,7 @@ mapcmd("<LEADER><CR>", "noh")
 
 -- move.nvim
 keymap("n", "<C-j>", ":MoveLine(1)<CR>", opts)
-keymap("n", "<C-k>", ":MoveLine(-1)<CR>", opts)
+keymap("n", "<C-o>", ":MoveLine(-1)<CR>", opts)
 keymap("n", "<C-h>", ":MoveHChar(-1)<CR>", opts)
 keymap("n", "<C-l>", ":MoveHChar(1)<CR>", opts)
 

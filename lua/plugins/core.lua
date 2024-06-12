@@ -133,7 +133,12 @@ return {
 			width = 200,
 		},
 	},
-	"fedepujol/move.nvim",
+	{
+		"fedepujol/move.nvim",
+		config = function()
+			require("move").setup({})
+		end,
+	},
 	{
 		"Exafunction/codeium.vim",
 		config = function()
