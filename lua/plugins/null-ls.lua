@@ -2,7 +2,6 @@ return {
 	"nvimtools/none-ls.nvim",
 	dependencies = {
 		"nvimtools/none-ls-extras.nvim",
-		"gbprod/none-ls-shellcheck.nvim",
 	},
 	event = "BufReadPre",
 	config = function()
@@ -27,8 +26,6 @@ return {
 				-- require("none-ls.diagnostics.eslint_d"),
 				require("none-ls.formatting.eslint_d"),
 				require("none-ls.code_actions.eslint_d"),
-				require("none-ls-shellcheck.diagnostics"),
-				require("none-ls-shellcheck.code_actions"),
 			},
 			on_attach = function(client, bufnr)
 				if client.supports_method("textDocument/formatting") then
