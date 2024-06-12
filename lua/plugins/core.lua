@@ -25,7 +25,7 @@ return {
 	},
 	{
 		"nvim-telescope/telescope.nvim",
-		version = "0.1.0",
+		tag = "0.1.6",
 		dependencies = {
 			{ "nvim-lua/plenary.nvim" },
 		},
@@ -168,11 +168,6 @@ return {
 		config = function()
 			require("nvim-surround").setup({})
 		end,
-	},
-	{
-		"chrishrb/gx.nvim",
-		event = { "BufEnter" },
-		config = true,
 	},
 	{
 		"themaxmarchuk/tailwindcss-colors.nvim",
