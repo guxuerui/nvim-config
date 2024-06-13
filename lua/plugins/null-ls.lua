@@ -25,7 +25,7 @@ return {
 				null_ls.builtins.formatting.markdownlint,
 				-- require("none-ls.diagnostics.eslint_d"),
 				require("none-ls.formatting.eslint_d"),
-				require("none-ls.code_actions.eslint_d"),
+				-- require("none-ls.code_actions.eslint_d"),
 			},
 			on_attach = function(client, bufnr)
 				if client.supports_method("textDocument/formatting") then
