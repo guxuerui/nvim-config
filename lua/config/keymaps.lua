@@ -47,7 +47,8 @@ keymap("v", "<C-l>", ":MoveHBlock(1)<CR>", opts)
 keymap(
 	"n",
 	"S",
-	":w<CR> :lua vim.notify('Save Complete', 'info', { title = 'User Operation', timeout = 1000, stages = 'fade_in_slide_out'})<CR>",
+	-- ":w<CR> :lua vim.notify('Save Complete', 'info', { title = 'User Operation', timeout = 1000, stages = 'fade_in_slide_out'})<CR>",
+	":lua if vim.bo.filetype == 'vue' or vim.bo.filetype == 'typescript' then vim.cmd('EslintFixAll') end; <CR> :w<CR>",
 	opts
 )
 keymap("n", "Q", ":q!<CR>", opts)
