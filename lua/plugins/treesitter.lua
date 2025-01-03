@@ -29,6 +29,7 @@ return {
 					"fish",
 					"prisma",
 					"regex",
+					"rust",
 				},
 				sync_install = true,
 				ignore_install = { "php", "phpdoc" },
