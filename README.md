@@ -111,6 +111,8 @@ return {
 * prisma-language-server
 * pyright
 * rust-analyzer
+* cpptools
+* codelldb
 * stylua
 * svelte-language-server
 * tailwindcss-language-server
