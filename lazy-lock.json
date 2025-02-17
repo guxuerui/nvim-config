@@ -56,6 +56,7 @@
   "printer.nvim": { "branch": "master", "commit": "bdd5310075f9d4fe5d4270b7dc75188347fa9353" },
   "ranger.nvim": { "branch": "main", "commit": "d3b032feee6b3b0cf923222f260523e2bd7f3ad3" },
   "searchbox.nvim": { "branch": "main", "commit": "5cbf11fbaa24da8810f467736cef7dde2410dfb2" },
+  "smear-cursor.nvim": { "branch": "main", "commit": "4b7334a09cd2434e73588cc0ea63e71177251249" },
   "symbol-usage.nvim": { "branch": "main", "commit": "70ed17636d336a8770eda9d078982decae4e8df8" },
   "tabline.nvim": { "branch": "main", "commit": "ff33d12a20d52daafa5393162cae4108faf8128b" },
   "tailwindcss-colors.nvim": { "branch": "main", "commit": "ccb5be2f84673c1a0ef90a0c0a76733e85e5265b" },
