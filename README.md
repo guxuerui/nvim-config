@@ -6,6 +6,8 @@
 
 * Neovim >= v0.8.3
 
+![image](https://github.com/user-attachments/assets/07a70249-4d76-42a8-ba7e-d05bcb6564b2)
+
 ![preview](https://user-images.githubusercontent.com/23629097/217407314-6c672021-c42f-46af-9e2e-62afaea1858d.png)
 
 ## :file_folder: File Structure
